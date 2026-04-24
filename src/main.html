@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Norwich & District Table Tennis League</title>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <style>
         /* Custom scrollbar for horizontal scrolling elements */
         .hide-scrollbar::-webkit-scrollbar {
@@ -15,10 +20,19 @@
             scrollbar-width: none;
         }
     </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    FontFamily: {
+                        sans: ['poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body class="bg-[#333333] text-gray-800 font-sans antialiased min-h-[150vh]">
-
-    
 
     <header class="sticky top-0 z-50 shadow-md">
 
@@ -39,7 +53,7 @@
         <!-- Logo Insertion + Lower Header -->
 
             <div class="flex items-center">
-                <img src="15023 (1).jpg" alt="Norwich & District Table Tennis League" class="h-20 object-contain">
+                <img src="NorwichTTLeagueLogo.jpg" alt="Norwich & District Table Tennis League" class="h-20 object-contain">
             </div>
 
             <nav class="hidden md:flex space-x-2 uppercase font-bold tracking-wider text-sm border-l border-white/20 pl-6 h-10 items-justify-end">
@@ -55,8 +69,11 @@
     <main class="max-w-[1800px] mx-auto px-6 py-8 flex flex-col lg:flex-row gap-6 items-start">
 
         <aside class="w-full lg:w-1/4 lg:sticky lg:top-[140px] z-40">
-            <div class="relative bg-gradient-to-b from-[#408080] to-[#2b5959] text-white h-[600px] p-6 shadow-xl overflow-hidden border-4 border-[#5b6a7a]">
+            <div class="relative bg-gradient-to-t from-[#051A35] to-[#0E4B9B] text-white h-[800px] p-6 shadow-xl overflow-hidden border-4 border-[#5b6a7a]">
                 <div class="absolute inset-0 bg-black/20 z-0">
+
+        <!--Add news image here-->
+
                     <img src="IMG_7161.jpg" alt="Sample Table Tennis Image for News" class="w-full h-full object-cover opacity-50">
                 </div> 
                 
@@ -78,9 +95,12 @@
         <section class="w-full lg:w-3/4 space-y-8">
 
             <div class="bg-[#5b6a7a] p-1 rounded shadow-lg">
+
+            <!-- Recent Matches -->
+
                 <div class="flex items-center gap-2 mb-2 p-2 pb-0">
                     <h2 class="text-white text-xl font-bold uppercase mr-4 underline underline-offset-4 decoration-2">Recent Matches</h2>
-                    <div class="flex space-x-1 text-sm font-bold">
+                    <div class="flex space-x-1 text-sm font-bold overflow-x-auto hide-scrollbar">
                         <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">PREMIER</button>
                         <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">DIVISION 1</button>
                         <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">DIVISION 2</button>
@@ -89,7 +109,7 @@
                     </div>
                 </div>
 
-                <div class="bg-[#a8c2de] p-4 flex gap-4 overflow-x-auto hide-scrollbar relative items-center">
+                <div class="bg-[#a8c2de] p-4 flex gap-4 overflow-x-auto scrollbar relative items-center">
                     
                     <div class="bg-[#f0f4f8] p-7 min-w-[200px] text-center flex-shrink-0">
                         <div class="flex justify-between font-bold text-sm mb-1 uppercase">
@@ -103,8 +123,8 @@
 
                     <div class="bg-[#f0f4f8] p-7 min-w-[200px] text-center  flex-shrink-0">
                         <div class="flex justify-between font-bold text-sm mb-1 uppercase">
-                            <span>Taverham C</span>
-                            <span class="text-[#1a4b8c]">Wensum E</span>
+                            <span class="text-[#1a4b8c]">Taverham C</span>
+                            <span class="px-2">Wensum E</span>
                         </div>
                         <div class="text-xs text-gray-500 mb-2">16/3/26</div>
                         <div class="text-5xl font-black mb-4 tracking-wider text-[#1a4b8c]">6 <span class="text-3xl text-gray-400 font-normal">:</span> <span class="text-black">4</span></div>
@@ -113,8 +133,8 @@
 
                     <div class="bg-[#f0f4f8] p-7 min-w-[200px] text-center flex-shrink-0">
                         <div class="flex justify-between font-bold text-sm mb-1 uppercase">
-                            <span>Thorpe E</span>
-                            <span class="text-[#1a4b8c]">UEA B</span>
+                            <span class="text-[#1a4b8c]">Thorpe E</span>
+                            <span>UEA B</span>
                         </div>
                         <div class="text-xs text-gray-500 mb-2">16/3/26</div>
                         <div class="text-5xl font-black mb-4 tracking-wider text-[#1a4b8c]">8 <span class="text-3xl text-gray-400 font-normal">:</span> <span class="text-black">2</span></div>
@@ -131,18 +151,13 @@
                         <div class="text-xs font-bold uppercase">POTM: <span class="text-gray-600">Mark Trankus</span></div>
                     </div>
 
-                    <div class="flex flex-col ml-2 text-[#1a4b8c] text-3xl">
-                        <button class="hover:text-blue-900 leading-none">&gt;</button>
-                        <button class="hover:text-blue-900 leading-none">&lt;</button>
-                    </div>
-
                 </div>
             </div>
 
             <div class="bg-[#5b6a7a] p-1 rounded shadow-lg">
                 <div class="flex items-center gap-2 mb-2 p-2 pb-0">
                     <h2 class="text-white text-xl font-bold uppercase mr-4 underline underline-offset-4 decoration-2">Season Table</h2>
-                    <div class="flex space-x-1 text-sm font-bold">
+                    <div class="flex space-x-1 text-sm font-bold overflow-x-auto hide-scrollbar">
                         <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">PREMIER</button>
                         <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">DIVISION 1</button>
                         <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">DIVISION 2</button>

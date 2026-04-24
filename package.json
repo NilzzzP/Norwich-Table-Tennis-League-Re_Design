@@ -1,7 +1,29 @@
 {
   "dependencies": {
     "@tailwindcss/postcss": "^4.2.4",
-    "postcss": "^8.5.10",
-    "tailwindcss": "^4.2.4"
-  }
+    "postcss": "^8.5.10"
+  },
+  "name": "fyp-hifi-v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NilzzzP/FYP-HiFi-V1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NilzzzP/FYP-HiFi-V1/issues"
+  },
+  "homepage": "https://github.com/NilzzzP/FYP-HiFi-V1#readme"
 }
