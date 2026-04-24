@@ -32,23 +32,27 @@
         }
     </script>
 </head>
-<body class="bg-[#333333] text-gray-800 font-sans antialiased min-h-[150vh]">
+<body class="bg-[#333333] text-gray-800 font-sans antialiased min-h-[150vh] font-sans">
+    <div class="fixed inset-0 z-[-1]">
+        <div class="absolute inset-0 bg-[url('abstractBackground.jpg')] bg-cover bg-center bg-no-repeat opacity-40"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/60 to-black"></div>
+    </div>
 
     <header class="sticky top-0 z-50 shadow-md">
 
         <!-- Header -->
 
-        <div class="bg-gradient-to-r from-[#7babe9] to-[#051A35] text-white flex justify-end px-20 py-1 text-sm font-semibold tracking-wider space-x-6">
+        <div class="bg-gradient-to-r from-[#7babe9] to-[#051A35] text-white flex justify-end px-5 py-3 lg:px-20 lg:py-1 text-sm font-semibold tracking-wider space-x-6">
 
         <!-- Upper Header -->
 
             <a href="#" class="hover:text-gray-300">CONTACT US</a>
-            <a href="#" class="hover:text-gray-300">JOIN A CLUB</a>
+            <a href="#" class="hover:text-gray-300">FIND A CLUB</a>
             <a href="#" class="hover:text-gray-300">NEWS</a>
             <a href="#" class="hover:text-gray-300">LOGIN</a>
         </div>
 
-        <div class="bg-gradient-to-r from-[#0E4B9B] to-[#051A35] text-white flex justify-between items-center px-20 py-4">
+        <div class="bg-gradient-to-r from-[#0E4B9B] to-[#051A35] text-white flex justify-between items-center px-5 lg:px-20 py-4">
 
         <!-- Logo Insertion + Lower Header -->
 
@@ -63,13 +67,26 @@
                 <a href="#" class="hover:text-blue-300 px-2 border-r border-white/20 h-full flex items-center">Archive</a>
                 <a href="#" class="hover:text-blue-300 px-2 pl-4 h-full flex items-center">My Account</a>
             </nav>
+
+            <button id="mobileMenuButton" class="md:hidden text-white focus:outline-none hover:text-blue-300">
+                <img src="HamburgerMenu.svg" alt="Menu Icon" class="w-8 h-8">
+            </button>
         </div>
+
+        <nav id="mobile-menu" class="hidden md:hidden flex flex-col space-y-2 mt-4 pt-4 border-t border-white/20 uppercase font-bold tracking-wider text-sm">
+                <a href="#" class="hover:text-blue-300 block py-2">Fixtures and Results</a>
+                <a href="#" class="hover:text-blue-300 block py-2">Rankings</a>
+                <a href="#" class="hover:text-blue-300 block py-2">Venues</a>
+                <a href="#" class="hover:text-blue-300 block py-2">Archive</a>
+                <a href="#" class="hover:text-blue-300 block py-2">My Account</a>
+        </nav>
+
     </header>
 
     <main class="max-w-[1800px] mx-auto px-6 py-8 flex flex-col lg:flex-row gap-6 items-start">
 
         <aside class="w-full lg:w-1/4 lg:sticky lg:top-[140px] z-40">
-            <div class="relative bg-gradient-to-t from-[#051A35] to-[#0E4B9B] text-white h-[800px] p-6 shadow-xl overflow-hidden border-4 border-[#5b6a7a]">
+            <div class="relative bg-gradient-to-t from-[#051A35] to-[#0E4B9B] text-white h-[450px] lg:h-[800px] p-6 shadow-xl overflow-hidden border-4 border-[#5b6a7a]">
                 <div class="absolute inset-0 bg-black/20 z-0">
 
         <!--Add news image here-->
@@ -113,8 +130,8 @@
                     
                     <div class="bg-[#f0f4f8] p-7 min-w-[200px] text-center flex-shrink-0">
                         <div class="flex justify-between font-bold text-sm mb-1 uppercase">
-                            <span>Thorpe D</span>
-                            <span class="text-[#1a4b8c] px-2">Rosebery Road MYC</span>
+                            <span class="px-5">Thorpe D</span>
+                            <span class="text-[#1a4b8c] px-5">Rosebery Road MYC</span>
                         </div>
                         <div class="text-xs text-gray-500 mb-2">16/3/26</div>
                         <div class="text-5xl font-black mb-4 tracking-wider">5 <span class="text-3xl text-gray-400 font-normal">:</span> 5</div>
@@ -151,8 +168,20 @@
                         <div class="text-xs font-bold uppercase">POTM: <span class="text-gray-600">Mark Trankus</span></div>
                     </div>
 
+                    <div class="bg-[#f0f4f8] p-7 min-w-[200px] text-center flex-shrink-0">
+                        <div class="flex justify-between font-bold text-sm mb-1 uppercase">
+                            <span class="text-[#1a4b8c]">SFC C</span>
+                            <span>Taverham D</span>
+                        </div>
+                        <div class="text-xs text-gray-500 mb-2">16/3/26</div>
+                        <div class="text-5xl font-black mb-4 tracking-wider text-[#1a4b8c]">9 <span class="text-3xl text-gray-400 font-normal">:</span> <span class="text-black">1</span></div>
+                        <div class="text-xs font-bold uppercase">POTM: <span class="text-[#1a4b8c]">Bledge Markle</span></div>
+                    </div>
+
                 </div>
             </div>
+
+            <!-- Season Table -->
 
             <div class="bg-[#5b6a7a] p-1 rounded shadow-lg">
                 <div class="flex items-center gap-2 mb-2 p-2 pb-0">
@@ -166,11 +195,11 @@
                     </div>
                 </div>
 
-                <div class="bg-[#a8c2de] p-4 overflow-x-auto">
+                <div class="bg-gradient-to-b from-[#7babe9] to-[#051A35] p-4 overflow-x-auto text-white">
                     <table class="w-full text-center table-auto">
                         <thead>
                             <tr class="uppercase font-bold text-sm border-b border-[#5b6a7a]/30">
-                                <th class="py-3 px-2 text-left w-12">No</th>
+                                <th class="py-3 px-2 text-left w-12">Rank</th>
                                 <th class="py-3 px-2 text-left">Team</th>
                                 <th class="py-3 px-2">Played</th>
                                 <th class="py-3 px-2">Win</th>
@@ -181,7 +210,7 @@
                                 <th class="py-3 px-2">Points</th>
                             </tr>
                         </thead>
-                        <tbody class="text-sm font-semibold font-mono">
+                        <tbody class="text-sm font-semibold">
                             <tr class="border-b border-[#5b6a7a]/10 hover:bg-white/20 transition-colors">
                                 <td class="py-2 px-2 text-left">1</td>
                                 <td class="py-2 px-2 text-left uppercase font-sans">Taverham C</td>
@@ -302,6 +331,140 @@
                                 <td class="py-2 px-2">41/149</td>
                                 <td class="py-2 px-2">145/470</td>
                                 <td class="py-2 px-2">41</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- PLAYER RANKINGS SECTION -->
+            <div class="bg-[#5b6a7a] p-1 rounded shadow-lg">
+                <div class="flex items-center gap-2 mb-2 p-2 pb-0 flex-wrap">
+                    <h2 class="text-white text-xl font-bold uppercase mr-4 underline underline-offset-4 decoration-2">Player Rankings</h2>
+                    <!-- Tabs -->
+                    <div class="flex space-x-1 text-sm font-bold mt-2 sm:mt-0 overflow-x-auto hide-scrollbar max-w-full pb-1">
+                        <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white flex-shrink-0">PREMIER</button>
+                        <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white flex-shrink-0">DIVISION 1</button>
+                        <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white flex-shrink-0">DIVISION 2</button>
+                        <button class="bg-[#488cd8] px-3 py-1 text-white border-2 border-[#1a4b8c] flex-shrink-0">DIVISION 3</button>
+                        <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white flex-shrink-0">DIVISION 4</button>
+                    </div>
+                </div>
+
+                <!-- Table Container -->
+                <div class="bg-gradient-to-b from-[#7babe9] to-[#051A35] p-4 overflow-x-auto custom-scrollbar pb-6 text-white">
+                    <table class="w-full text-center table-auto min-w-[800px]">
+                        <thead>
+                            <tr class="uppercase font-bold text-sm border-b border-[#5b6a7a]/30">
+                                <th class="py-3 px-2 text-left w-12">Rank</th>
+                                <th class="py-3 px-2 text-left">Player</th>
+                                <th class="py-3 px-2 text-left">Team</th>
+                                <th class="py-3 px-2">Played</th>
+                                <th class="py-3 px-2">Won</th>
+                                <th class="py-3 px-2">Lost</th>
+                                <th class="py-3 px-2">Win %</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm font-semibold">
+                            <!-- Row 1 -->
+                            <tr class="border-b border-[#5b6a7a]/10 hover:bg-white/20 transition-colors">
+                                <td class="py-2 px-2 text-left">1</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Sam Walker</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">UEA B</td>
+                                <td class="py-2 px-2">15</td>
+                                <td class="py-2 px-2">14</td>
+                                <td class="py-2 px-2">1</td>
+                                <td class="py-2 px-2">93.3%</td>
+                            </tr>
+                            <!-- Row 2 -->
+                            <tr class="border-b border-[#5b6a7a]/10 hover:bg-white/20 transition-colors">
+                                <td class="py-2 px-2 text-left">2</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Gregor Petroc</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Wensum E</td>
+                                <td class="py-2 px-2">15</td>
+                                <td class="py-2 px-2">13</td>
+                                <td class="py-2 px-2">2</td>
+                                <td class="py-2 px-2">86.6%</td>
+                            </tr>
+                            <!-- Row 3 -->
+                            <tr class="border-b border-[#5b6a7a]/10 hover:bg-white/20 transition-colors">
+                                <td class="py-2 px-2 text-left">3</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Mark Trankus</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Thorpe D</td>
+                                <td class="py-2 px-2">14</td>
+                                <td class="py-2 px-2">12</td>
+                                <td class="py-2 px-2">2</td>
+                                <td class="py-2 px-2">85.7%</td>
+                            </tr>
+                            <!-- Row 4 -->
+                            <tr class="border-b border-[#5b6a7a]/10 hover:bg-white/20 transition-colors">
+                                <td class="py-2 px-2 text-left">4</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Terry Matt</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Thorpe D</td>
+                                <td class="py-2 px-2">15</td>
+                                <td class="py-2 px-2">12</td>
+                                <td class="py-2 px-2">3</td>
+                                <td class="py-2 px-2">80.0%</td>
+                            </tr>
+                             <!-- Row 5 -->
+                             <tr class="border-b border-[#5b6a7a]/10 hover:bg-white/20 transition-colors">
+                                <td class="py-2 px-2 text-left">5</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Jamie Smith</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Gothic B</td>
+                                <td class="py-2 px-2">16</td>
+                                <td class="py-2 px-2">11</td>
+                                <td class="py-2 px-2">5</td>
+                                <td class="py-2 px-2">68.7%</td>
+                            </tr>
+                            <!-- Row 6 -->
+                            <tr class="border-b border-[#5b6a7a]/10 hover:bg-white/20 transition-colors">
+                                <td class="py-2 px-2 text-left">6</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Chris Evans</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Taverham C</td>
+                                <td class="py-2 px-2">15</td>
+                                <td class="py-2 px-2">10</td>
+                                <td class="py-2 px-2">5</td>
+                                <td class="py-2 px-2">66.6%</td>
+                            </tr>
+                            <!-- Row 7 -->
+                            <tr class="border-b border-[#5b6a7a]/10 hover:bg-white/20 transition-colors">
+                                <td class="py-2 px-2 text-left">7</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Sarah Jenkins</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">NCC C</td>
+                                <td class="py-2 px-2">16</td>
+                                <td class="py-2 px-2">10</td>
+                                <td class="py-2 px-2">6</td>
+                                <td class="py-2 px-2">62.5%</td>
+                            </tr>
+                            <!-- Row 8 -->
+                            <tr class="border-b border-[#5b6a7a]/10 hover:bg-white/20 transition-colors">
+                                <td class="py-2 px-2 text-left">8</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">David Miller</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Thorpe E</td>
+                                <td class="py-2 px-2">14</td>
+                                <td class="py-2 px-2">8</td>
+                                <td class="py-2 px-2">6</td>
+                                <td class="py-2 px-2">57.1%</td>
+                            </tr>
+                            <!-- Row 9 -->
+                            <tr class="border-b border-[#5b6a7a]/10 hover:bg-white/20 transition-colors">
+                                <td class="py-2 px-2 text-left">9</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Emma Stone</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Rosebery Road MYC</td>
+                                <td class="py-2 px-2">15</td>
+                                <td class="py-2 px-2">8</td>
+                                <td class="py-2 px-2">7</td>
+                                <td class="py-2 px-2">53.3%</td>
+                            </tr>
+                            <!-- Row 10 -->
+                            <tr class="hover:bg-white/20 transition-colors">
+                                <td class="py-2 px-2 text-left">10</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Michael Lee</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Wensum G</td>
+                                <td class="py-2 px-2">15</td>
+                                <td class="py-2 px-2">7</td>
+                                <td class="py-2 px-2">8</td>
+                                <td class="py-2 px-2">46.6%</td>
                             </tr>
                         </tbody>
                     </table>
