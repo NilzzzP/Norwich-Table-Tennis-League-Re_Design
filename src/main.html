@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norwich & District Table Tennis League</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom scrollbar for horizontal scrolling elements */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-[#333333] text-gray-800 font-sans antialiased min-h-[150vh]">
+
+    
+
+    <header class="sticky top-0 z-50 shadow-md">
+
+        <!-- Header -->
+
+        <div class="bg-gradient-to-r from-[#7babe9] to-[#051A35] text-white flex justify-end px-20 py-1 text-sm font-semibold tracking-wider space-x-6">
+
+        <!-- Upper Header -->
+
+            <a href="#" class="hover:text-gray-300">CONTACT US</a>
+            <a href="#" class="hover:text-gray-300">JOIN A CLUB</a>
+            <a href="#" class="hover:text-gray-300">NEWS</a>
+            <a href="#" class="hover:text-gray-300">LOGIN</a>
+        </div>
+
+        <div class="bg-gradient-to-r from-[#0E4B9B] to-[#051A35] text-white flex justify-between items-center px-20 py-4">
+
+        <!-- Logo Insertion + Lower Header -->
+
+            <div class="flex items-center">
+                <img src="15023 (1).jpg" alt="Norwich & District Table Tennis League" class="h-20 object-contain">
+            </div>
+
+            <nav class="hidden md:flex space-x-2 uppercase font-bold tracking-wider text-sm border-l border-white/20 pl-6 h-10 items-justify-end">
+                <a href="#" class="hover:text-blue-300 px-2 border-r border-white/20 h-full flex items-center">Fixtures and Results</a>
+                <a href="#" class="hover:text-blue-300 px-2 border-r border-white/20 h-full flex items-center">Rankings</a>
+                <a href="#" class="hover:text-blue-300 px-2 border-r border-white/20 h-full flex items-center">Venues</a>
+                <a href="#" class="hover:text-blue-300 px-2 border-r border-white/20 h-full flex items-center">Archive</a>
+                <a href="#" class="hover:text-blue-300 px-2 pl-4 h-full flex items-center">My Account</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-[1800px] mx-auto px-6 py-8 flex flex-col lg:flex-row gap-6 items-start">
+
+        <aside class="w-full lg:w-1/4 lg:sticky lg:top-[140px] z-40">
+            <div class="relative bg-gradient-to-b from-[#408080] to-[#2b5959] text-white h-[600px] p-6 shadow-xl overflow-hidden border-4 border-[#5b6a7a]">
+                <div class="absolute inset-0 bg-black/20 z-0">
+                    <img src="IMG_7161.jpg" alt="Sample Table Tennis Image for News" class="w-full h-full object-cover opacity-50">
+                </div> 
+                
+                <div class="relative z-10 flex flex-col h-full justify-between">
+                    <div>
+                        <h2 class="text-3xl font-extrabold uppercase leading-tight mb-4 underline decoration-2 underline-offset-4">Massive News About Norwich's Best Player!</h2>
+                        <p class="text-sm font-semibold mb-2">20/3/26</p>
+                        <p class="text-lg font-bold leading-snug">ONE OF NORWICH'S BEST PLAYER HAS MADE GREAT STRIDES IN TABLE TENNIS REPRESENTING HIS HOME CLUB</p>
+                    </div>
+                    
+                    <div class="flex justify-between text-sm font-bold mt-auto pt-4 border-t border-white/30">
+                        <button class="hover:text-gray-300">&larr; Previous</button>
+                        <button class="hover:text-gray-300">Next &rarr;</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <section class="w-full lg:w-3/4 space-y-8">
+
+            <div class="bg-[#5b6a7a] p-1 rounded shadow-lg">
+                <div class="flex items-center gap-2 mb-2 p-2 pb-0">
+                    <h2 class="text-white text-xl font-bold uppercase mr-4 underline underline-offset-4 decoration-2">Recent Matches</h2>
+                    <div class="flex space-x-1 text-sm font-bold">
+                        <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">PREMIER</button>
+                        <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">DIVISION 1</button>
+                        <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">DIVISION 2</button>
+                        <button class="bg-[#488cd8] px-3 py-1 text-white border-2 border-[#1a4b8c]">DIVISION 3</button>
+                        <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">DIVISION 4</button>
+                    </div>
+                </div>
+
+                <div class="bg-[#a8c2de] p-4 flex gap-4 overflow-x-auto hide-scrollbar relative items-center">
+                    
+                    <div class="bg-[#f0f4f8] p-7 min-w-[200px] text-center flex-shrink-0">
+                        <div class="flex justify-between font-bold text-sm mb-1 uppercase">
+                            <span>Thorpe D</span>
+                            <span class="text-[#1a4b8c] px-2">Rosebery Road MYC</span>
+                        </div>
+                        <div class="text-xs text-gray-500 mb-2">16/3/26</div>
+                        <div class="text-5xl font-black mb-4 tracking-wider">5 <span class="text-3xl text-gray-400 font-normal">:</span> 5</div>
+                        <div class="text-xs font-bold uppercase">POTM: <span class="text-gray-600">Terry Matt</span></div>
+                    </div>
+
+                    <div class="bg-[#f0f4f8] p-7 min-w-[200px] text-center  flex-shrink-0">
+                        <div class="flex justify-between font-bold text-sm mb-1 uppercase">
+                            <span>Taverham C</span>
+                            <span class="text-[#1a4b8c]">Wensum E</span>
+                        </div>
+                        <div class="text-xs text-gray-500 mb-2">16/3/26</div>
+                        <div class="text-5xl font-black mb-4 tracking-wider text-[#1a4b8c]">6 <span class="text-3xl text-gray-400 font-normal">:</span> <span class="text-black">4</span></div>
+                        <div class="text-xs font-bold uppercase">POTM: <span class="text-[#1a4b8c]">Gregor Petroc</span></div>
+                    </div>
+
+                    <div class="bg-[#f0f4f8] p-7 min-w-[200px] text-center flex-shrink-0">
+                        <div class="flex justify-between font-bold text-sm mb-1 uppercase">
+                            <span>Thorpe E</span>
+                            <span class="text-[#1a4b8c]">UEA B</span>
+                        </div>
+                        <div class="text-xs text-gray-500 mb-2">16/3/26</div>
+                        <div class="text-5xl font-black mb-4 tracking-wider text-[#1a4b8c]">8 <span class="text-3xl text-gray-400 font-normal">:</span> <span class="text-black">2</span></div>
+                        <div class="text-xs font-bold uppercase">POTM: <span class="text-[#1a4b8c]">Sam Walker</span></div>
+                    </div>
+
+                    <div class="bg-[#f0f4f8] p-7 min-w-[200px] text-center flex-shrink-0">
+                        <div class="flex justify-between font-bold text-sm mb-1 uppercase">
+                            <span>Gothic B</span>
+                            <span class="text-[#1a4b8c]">Thorpe D</span>
+                        </div>
+                        <div class="text-xs text-gray-500 mb-2">16/3/26</div>
+                        <div class="text-5xl font-black mb-4 tracking-wider">3 <span class="text-3xl text-gray-400 font-normal">:</span> <span class="text-[#1a4b8c]">7</span></div>
+                        <div class="text-xs font-bold uppercase">POTM: <span class="text-gray-600">Mark Trankus</span></div>
+                    </div>
+
+                    <div class="flex flex-col ml-2 text-[#1a4b8c] text-3xl">
+                        <button class="hover:text-blue-900 leading-none">&gt;</button>
+                        <button class="hover:text-blue-900 leading-none">&lt;</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="bg-[#5b6a7a] p-1 rounded shadow-lg">
+                <div class="flex items-center gap-2 mb-2 p-2 pb-0">
+                    <h2 class="text-white text-xl font-bold uppercase mr-4 underline underline-offset-4 decoration-2">Season Table</h2>
+                    <div class="flex space-x-1 text-sm font-bold">
+                        <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">PREMIER</button>
+                        <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">DIVISION 1</button>
+                        <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">DIVISION 2</button>
+                        <button class="bg-[#488cd8] px-3 py-1 text-white border-2 border-[#1a4b8c]">DIVISION 3</button>
+                        <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">DIVISION 4</button>
+                    </div>
+                </div>
+
+                <div class="bg-[#a8c2de] p-4 overflow-x-auto">
+                    <table class="w-full text-center table-auto">
+                        <thead>
+                            <tr class="uppercase font-bold text-sm border-b border-[#5b6a7a]/30">
+                                <th class="py-3 px-2 text-left w-12">No</th>
+                                <th class="py-3 px-2 text-left">Team</th>
+                                <th class="py-3 px-2">Played</th>
+                                <th class="py-3 px-2">Win</th>
+                                <th class="py-3 px-2">Lose</th>
+                                <th class="py-3 px-2">Draw</th>
+                                <th class="py-3 px-2">Sets For/Against</th>
+                                <th class="py-3 px-2">Games For/Against</th>
+                                <th class="py-3 px-2">Points</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm font-semibold font-mono">
+                            <tr class="border-b border-[#5b6a7a]/10 hover:bg-white/20 transition-colors">
+                                <td class="py-2 px-2 text-left">1</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Taverham C</td>
+                                <td class="py-2 px-2">18</td>
+                                <td class="py-2 px-2">15</td>
+                                <td class="py-2 px-2">1</td>
+                                <td class="py-2 px-2">2</td>
+                                <td class="py-2 px-2">142/38</td>
+                                <td class="py-2 px-2">440/120</td>
+                                <td class="py-2 px-2">142</td>
+                            </tr>
+                            <tr class="border-b border-[#5b6a7a]/10 hover:bg-white/20 transition-colors">
+                                <td class="py-2 px-2 text-left">2</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Wensum E</td>
+                                <td class="py-2 px-2">17</td>
+                                <td class="py-2 px-2">14</td>
+                                <td class="py-2 px-2">2</td>
+                                <td class="py-2 px-2">1</td>
+                                <td class="py-2 px-2">128/42</td>
+                                <td class="py-2 px-2">390/155</td>
+                                <td class="py-2 px-2">128</td>
+                            </tr>
+                            <tr class="border-b border-[#5b6a7a]/10 hover:bg-white/20 transition-colors">
+                                <td class="py-2 px-2 text-left">3</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Gothic B</td>
+                                <td class="py-2 px-2">18</td>
+                                <td class="py-2 px-2">12</td>
+                                <td class="py-2 px-2">4</td>
+                                <td class="py-2 px-2">2</td>
+                                <td class="py-2 px-2">115/65</td>
+                                <td class="py-2 px-2">360/210</td>
+                                <td class="py-2 px-2">115</td>
+                            </tr>
+                            <tr class="border-b border-[#5b6a7a]/10 hover:bg-white/20 transition-colors">
+                                <td class="py-2 px-2 text-left">4</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Rosebery Road MYC</td>
+                                <td class="py-2 px-2">19</td>
+                                <td class="py-2 px-2">10</td>
+                                <td class="py-2 px-2">7</td>
+                                <td class="py-2 px-2">2</td>
+                                <td class="py-2 px-2">102/88</td>
+                                <td class="py-2 px-2">320/280</td>
+                                <td class="py-2 px-2">102</td>
+                            </tr>
+                            <tr class="border-b border-[#5b6a7a]/10 hover:bg-white/20 transition-colors">
+                                <td class="py-2 px-2 text-left">5</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">NCC C</td>
+                                <td class="py-2 px-2">18</td>
+                                <td class="py-2 px-2">9</td>
+                                <td class="py-2 px-2">8</td>
+                                <td class="py-2 px-2">1</td>
+                                <td class="py-2 px-2">94/96</td>
+                                <td class="py-2 px-2">305/290</td>
+                                <td class="py-2 px-2">94</td>
+                            </tr>
+                            <tr class="border-b border-[#5b6a7a]/10 hover:bg-white/20 transition-colors">
+                                <td class="py-2 px-2 text-left">6</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">UEA B</td>
+                                <td class="py-2 px-2">18</td>
+                                <td class="py-2 px-2">8</td>
+                                <td class="py-2 px-2">9</td>
+                                <td class="py-2 px-2">1</td>
+                                <td class="py-2 px-2">88/92</td>
+                                <td class="py-2 px-2">290/300</td>
+                                <td class="py-2 px-2">88</td>
+                            </tr>
+                            <tr class="border-b border-[#5b6a7a]/10 hover:bg-white/20 transition-colors">
+                                <td class="py-2 px-2 text-left">7</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">SFC C</td>
+                                <td class="py-2 px-2">18</td>
+                                <td class="py-2 px-2">7</td>
+                                <td class="py-2 px-2">10</td>
+                                <td class="py-2 px-2">1</td>
+                                <td class="py-2 px-2">81/99</td>
+                                <td class="py-2 px-2">275/315</td>
+                                <td class="py-2 px-2">81</td>
+                            </tr>
+                            <tr class="border-b border-[#5b6a7a]/10 hover:bg-white/20 transition-colors">
+                                <td class="py-2 px-2 text-left">8</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Taverham D</td>
+                                <td class="py-2 px-2">19</td>
+                                <td class="py-2 px-2">6</td>
+                                <td class="py-2 px-2">12</td>
+                                <td class="py-2 px-2">1</td>
+                                <td class="py-2 px-2">76/114</td>
+                                <td class="py-2 px-2">250/360</td>
+                                <td class="py-2 px-2">76</td>
+                            </tr>
+                            <tr class="border-b border-[#5b6a7a]/10 hover:bg-white/20 transition-colors">
+                                <td class="py-2 px-2 text-left">9</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Wensum G</td>
+                                <td class="py-2 px-2">18</td>
+                                <td class="py-2 px-2">5</td>
+                                <td class="py-2 px-2">12</td>
+                                <td class="py-2 px-2">1</td>
+                                <td class="py-2 px-2">68/112</td>
+                                <td class="py-2 px-2">220/380</td>
+                                <td class="py-2 px-2">68</td>
+                            </tr>
+                            <tr class="border-b border-[#5b6a7a]/10 hover:bg-white/20 transition-colors">
+                                <td class="py-2 px-2 text-left">10</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Thorpe D</td>
+                                <td class="py-2 px-2">18</td>
+                                <td class="py-2 px-2">3</td>
+                                <td class="py-2 px-2">14</td>
+                                <td class="py-2 px-2">1</td>
+                                <td class="py-2 px-2">55/125</td>
+                                <td class="py-2 px-2">180/410</td>
+                                <td class="py-2 px-2">55</td>
+                            </tr>
+                            <tr class="hover:bg-white/20 transition-colors">
+                                <td class="py-2 px-2 text-left">11</td>
+                                <td class="py-2 px-2 text-left uppercase font-sans">Thorpe E</td>
+                                <td class="py-2 px-2">19</td>
+                                <td class="py-2 px-2">2</td>
+                                <td class="py-2 px-2">16</td>
+                                <td class="py-2 px-2">1</td>
+                                <td class="py-2 px-2">41/149</td>
+                                <td class="py-2 px-2">145/470</td>
+                                <td class="py-2 px-2">41</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>
