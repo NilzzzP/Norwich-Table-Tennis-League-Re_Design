@@ -1,0 +1,51 @@
+Division,Rank,Player,Team,Played,Won,Lost,Win %
+PREMIER,1,Arthur Pendragon,Wensum A,18,18,0,100.0%
+PREMIER,2,Marcus Aurelius,Taverham A,18,17,1,94.4%
+PREMIER,3,Leonidas King,Gothic A,16,15,1,93.8%
+PREMIER,4,John Smith,Wensum A,18,16,2,88.9%
+PREMIER,5,David Miller,Cringleford Spinners,18,15,3,83.3%
+PREMIER,6,Tom Hardy,UEA A,15,12,3,80.0%
+PREMIER,7,Oliver Twist,NCC A,18,14,4,77.8%
+PREMIER,8,James Bond,Taverham A,17,13,4,76.5%
+PREMIER,9,Harry Potter,Gothic A,18,13,5,72.2%
+PREMIER,10,Bruce Wayne,Thorpe A,16,11,5,68.8%
+DIVISION 1,1,Clark Kent,Sprowston Smashers,18,17,1,94.4%
+DIVISION 1,2,Peter Parker,Wymondham Warriors,18,16,2,88.9%
+DIVISION 1,3,Tony Stark,Taverham B,15,13,2,86.7%
+DIVISION 1,4,Steve Rogers,Wensum B,18,15,3,83.3%
+DIVISION 1,5,Barry Allen,Dereham Dynamos,17,14,3,82.4%
+DIVISION 1,6,Hal Jordan,Sprowston Smashers,18,14,4,77.8%
+DIVISION 1,7,Oliver Queen,Wymondham Warriors,16,12,4,75.0%
+DIVISION 1,8,Wally West,Gothic C,18,13,5,72.2%
+DIVISION 1,9,Dick Grayson,Thorpe B,18,12,6,66.7%
+DIVISION 1,10,Jason Todd,Costessey Cobras,15,9,6,60.0%
+DIVISION 2,1,Luke Skywalker,Poringland Paddles,18,18,0,100.0%
+DIVISION 2,2,Han Solo,Mulbarton Meteors,18,16,2,88.9%
+DIVISION 2,3,Leia Organa,Attleborough Aces,16,14,2,87.5%
+DIVISION 2,4,Obi-Wan Kenobi,Wensum C,18,15,3,83.3%
+DIVISION 2,5,Lando Calrissian,Brundall Bears,17,13,4,76.5%
+DIVISION 2,6,Chewbacca,Poringland Paddles,18,13,5,72.2%
+DIVISION 2,7,Poe Dameron,Aylsham Archers,15,10,5,66.7%
+DIVISION 2,8,Finn,Blofield Bats,18,11,7,61.1%
+DIVISION 2,9,Rey,Mulbarton Meteors,16,9,7,56.3%
+DIVISION 2,10,Kylo Ren,NCC B,18,10,8,55.6%
+DIVISION 3,1,Frodo Baggins,Hellesdon Harriers,18,17,1,94.4%
+DIVISION 3,2,Samwise Gamgee,Broadland Vipers,18,16,2,88.9%
+DIVISION 3,3,Aragorn,Riverside Rackets,17,15,2,88.2%
+DIVISION 3,4,Legolas,Earlham Experts,18,15,3,83.3%
+DIVISION 3,5,Gimli,Bowthorpe Blitz,16,13,3,81.3%
+DIVISION 3,6,Gandalf,Hellesdon Harriers,18,14,4,77.8%
+DIVISION 3,7,Boromir,Lakenham Lightning,15,11,4,73.3%
+DIVISION 3,8,Merry Brandybuck,Trowse Titans,18,12,6,66.7%
+DIVISION 3,9,Pippin Took,Hingham Hitters,18,11,7,61.1%
+DIVISION 3,10,Gollum,Wensum D,16,9,7,56.3%
+DIVISION 4,1,Jon Snow,Horsford Heroes,18,18,0,100.0%
+DIVISION 4,2,Arya Stark,Coltishall Comets,18,16,2,88.9%
+DIVISION 4,3,Tyrion Lannister,Newton Flotman Flyers,17,14,3,82.4%
+DIVISION 4,4,Daenerys Targaryen,Easton Express,18,14,4,77.8%
+DIVISION 4,5,Sansa Stark,Martham Mavericks,16,12,4,75.0%
+DIVISION 4,6,Bran Stark,Hemsby Hurricanes,18,13,5,72.2%
+DIVISION 4,7,Jaime Lannister,Horsford Heroes,15,10,5,66.7%
+DIVISION 4,8,Cersei Lannister,Wensum F,18,11,7,61.1%
+DIVISION 4,9,Robb Stark,Taverham E,18,10,8,55.6%
+DIVISION 4,10,Theon Greyjoy,Thorpe F,16,8,8,50.0%
