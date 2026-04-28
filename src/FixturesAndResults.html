@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norwich & District Table Tennis League</title>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./JSFiles/HomepageHamburgerMenu.js"></script>
+    
+    <style>
+        /* Custom scrollbar for horizontal scrolling elements */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    FontFamily: {
+                        /* Using the same font as TableTennisEngland website */
+                        sans: ['poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#333333] text-gray-800 antialiased min-h-[150vh] font-sans">
+
+    <!-- Background Image with Gradient Overlay -->
+    
+    <div class="fixed inset-0 z-[-1]">
+        <div class="absolute inset-0 bg-[url('abstractBackground.jpg')] bg-cover bg-center bg-no-repeat opacity-40"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/60 to-black"></div>
+    </div>
+
+    <header class="sticky top-0 relative z-50 shadow-md">
+
+    <!-- Header -->
+
+        <div class="bg-gradient-to-r from-[#7babe9] to-[#051A35] text-white flex justify-end px-5 py-3 lg:px-20 lg:py-1 text-sm font-semibold tracking-wider space-x-6">
+
+    <!-- Upper Header -->
+
+            <a href="#" class="hover:text-gray-300">CONTACT US</a>
+            <a href="#" class="hover:text-gray-300">FIND A CLUB</a>
+            <a href="#" class="hover:text-gray-300">NEWS</a>
+            <a href="#" class="hover:text-gray-300">LOGIN</a>
+        </div>
+
+        <div class="bg-gradient-to-r from-[#0E4B9B] to-[#051A35] text-white flex justify-between items-center px-5 lg:px-20 py-4">
+
+    <!-- Logo Insertion + Lower Header -->
+
+            <div class="flex items-center">
+                <a href="main.html">
+                <img src="NorwichTTLeagueLogo.jpg" alt="Norwich & District Table Tennis League" class="h-20 object-contain">
+                </a>
+            </div>
+
+            <nav class="hidden md:flex space-x-2 uppercase font-bold tracking-wider text-sm border-l border-white/20 pl-6 h-10 items-justify-end">
+                <a href="FixturesAndResults.html" class="hover:text-blue-300 px-2 border-r border-white/20 h-full flex items-center">Fixtures and Results</a>
+                <a href="#" class="hover:text-blue-300 px-2 border-r border-white/20 h-full flex items-center">Rankings</a>
+                <a href="#" class="hover:text-blue-300 px-2 border-r border-white/20 h-full flex items-center">Venues</a>
+                <a href="#" class="hover:text-blue-300 px-2 border-r border-white/20 h-full flex items-center">Archive</a>
+                <a href="#" class="hover:text-blue-300 px-2 pl-4 h-full flex items-center">My Account</a>
+            </nav>
+
+    <!-- Mobile Hamburger Menu -->
+
+            <button id="mobileMenuButton" class="md:hidden text-white focus:outline-none hover:text-blue-300">
+                <img src="HamburgerMenu.svg" alt="Menu Icon" class="w-8 h-8">
+            </button>
+        </div>
+
+    <!-- Hidden Mobile Menu -->
+
+        <nav id="mobile-menu" class="hidden md:hidden absolute flex top-full w-full left-0 z-50 flex-col border-t border-white/20 uppercase font-bold tracking-wider text-sm bg-[#333333] text-white">
+            <a href="main.html" class="hover:text-blue-300 block py-2 px-5">Home</a>
+            <a href="FixturesAndResults.html" class="hover:text-blue-300 block py-2 px-5">Fixtures and Results</a>
+            <a href="#" class="hover:text-blue-300 block py-2 px-5">Rankings</a>
+            <a href="#" class="hover:text-blue-300 block py-2 px-5">Venues</a>
+            <a href="#" class="hover:text-blue-300 block py-2 px-5">Archive</a>
+            <a href="#" class="hover:text-blue-300 block py-2 px-5">My Account</a>
+        </nav>
+
+    </header>
+
+    <!-- Background Blur when drop menu is clicked-->
+
+    <div id="menu-overlay" class="fixed inset-0 bg-black/70 z-40 hidden md:hidden backdrop-blur-sm transition-opacity"></div>
+
+    <main class="max-w-[1800px] mx-auto px-6 py-8 flex flex-col lg:flex-row gap-6 items-start">
+
+        <!-- Selection for parameters -->
+
+        <aside class="w-full lg:w-1/2 lg:sticky lg:top-[140px] z-30 bg-[#5b6a7a] p-5 relative h-fit">
+            <div class="flex items-center gap-2 mb-2 p-2 pb-0">
+                <div id="season-tabs" class="flex space-x-1 text-sm mt-2 sm:mt-0 font-bold overflow-x-auto hide-scrollbar max-w-full pb-1">
+                    <button class="bg-[#488cd8] px-3 py-1 text-white border-2 border-[#1a4b8c]">PREMIER</button>
+                    <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">DIVISION 1</button>
+                    <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">DIVISION 2</button>
+                    <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">DIVISION 3</button>
+                    <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">DIVISION 4</button>
+                </div>
+                <button class="bg-[#c2cdd8] text-black font-bold text-xl py-1 uppercase px-4 hover:bg-white transition-colors flex-grow sm:flex-grow-0 border border-black/20 mb-1">
+                    Show Selected
+                </button>
+            </div>
+            <div class="flex flex-col gap-[6px] text-white">
+                <button class="w-full text-left bg-gradient-to-r from-[#8e98a3] to-[#051A35] hover:bg-[#a2acb8]  text-2xl uppercase px-4 py-6 transition-colors">
+                    Season Table
+                </button>
+                <button class="w-full text-left bg-gradient-to-r from-[#8e98a3] to-[#051a35] hover:bg-[#a2acb8]  text-2xl uppercase px-4 py-6 transition-colors">
+                    Upcoming Fixtures
+                </button>
+                <button class="w-full text-left bg-gradient-to-r from-[#8e98a3] to-[#051a35] hover:bg-[#a2acb8]  text-2xl uppercase px-4 py-6 transition-colors">
+                    Results
+                </button>
+                <button class="w-full text-left bg-gradient-to-r from-[#8e98a3] to-[#051a35] hover:bg-[#a2acb8]  text-2xl uppercase px-4 py-6 transition-colors">
+                    Season Player Stats
+                </button>
+                <button class="w-full text-left bg-gradient-to-r from-[#488cd8] to-[#051a35] text-white border-2 border-[#1a4b8c] text-2xl uppercase px-4 py-6">
+                    Player of the Match Stats
+                </button>
+            </div>
+        </aside>
+
+        <section class="w-full lg:w-1/2 space-y-8 bg-gradient-to-b from-[#7babe9] to-[#051A35] p-5">
+            <div class="flex flex-wrap gap-2 mb-3">
+                <button class="flex items-center gap-2 bg-[#d8e0e8] hover:bg-white px-6 py-1.5 text-sm font-bold border-2 border-[#1a4b8c] uppercase transition-colors shadow-sm">
+                    <img src="FilterIcon.svg" class="w-4 h-4 text-black">
+                    FILTER
+                </button>
+                <button class="flex items-center gap-2 bg-[#d8e0e8] hover:bg-white px-6 py-1.5 text-sm font-bold border-2 border-[#1a4b8c] uppercase transition-colors shadow-sm">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                    </svg>
+                    SORT
+                </button>
+            </div>
+
+            <div id="data-display-area" class="w-full min-h-[600px] lg:min-h-[800px] relative px-4 py-2 flex-1">
+                <!-- JS will insert data into here -->
+            </div>
+        
+        </section>
+    </main>
+
+
+

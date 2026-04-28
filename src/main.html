@@ -12,6 +12,7 @@
     <script src="./JSFiles/HomepageSeasonTable.js"></script>
     <script src="./JSFiles/HomepagePlayerRankings.js"></script>
     <script src="./JSFiles/HomepageRecentMatches.js"></script>
+    <script src="./JSFiles/HomepageHamburgerMenu.js"></script>
     
     <style>
         /* Custom scrollbar for horizontal scrolling elements */
@@ -28,6 +29,7 @@
             theme: {
                 extend: {
                     FontFamily: {
+                        /* Using the same font as TableTennisEngland website */
                         sans: ['poppins', 'sans-serif'],
                     }
                 }
@@ -36,18 +38,21 @@
     </script>
 </head>
 <body class="bg-[#333333] text-gray-800 antialiased min-h-[150vh] font-sans">
+
+    <!-- Background Image with Gradient Overlay -->
+    
     <div class="fixed inset-0 z-[-1]">
         <div class="absolute inset-0 bg-[url('abstractBackground.jpg')] bg-cover bg-center bg-no-repeat opacity-40"></div>
         <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/60 to-black"></div>
     </div>
 
-    <header class="sticky top-0 z-50 shadow-md">
+    <header class="sticky top-0 relative z-50">
 
-        <!-- Header -->
+    <!-- Header -->
 
         <div class="bg-gradient-to-r from-[#7babe9] to-[#051A35] text-white flex justify-end px-5 py-3 lg:px-20 lg:py-1 text-sm font-semibold tracking-wider space-x-6">
 
-        <!-- Upper Header -->
+    <!-- Upper Header -->
 
             <a href="#" class="hover:text-gray-300">CONTACT US</a>
             <a href="#" class="hover:text-gray-300">FIND A CLUB</a>
@@ -57,51 +62,64 @@
 
         <div class="bg-gradient-to-r from-[#0E4B9B] to-[#051A35] text-white flex justify-between items-center px-5 lg:px-20 py-4">
 
-        <!-- Logo Insertion + Lower Header -->
+    <!-- Logo Insertion + Lower Header -->
 
             <div class="flex items-center">
+                <a href="main.html">
                 <img src="NorwichTTLeagueLogo.jpg" alt="Norwich & District Table Tennis League" class="h-20 object-contain">
+                </a>
             </div>
 
             <nav class="hidden md:flex space-x-2 uppercase font-bold tracking-wider text-sm border-l border-white/20 pl-6 h-10 items-justify-end">
-                <a href="#" class="hover:text-blue-300 px-2 border-r border-white/20 h-full flex items-center">Fixtures and Results</a>
+                <a href="FixturesAndResults.html" class="hover:text-blue-300 px-2 border-r border-white/20 h-full flex items-center">Fixtures and Results</a>
                 <a href="#" class="hover:text-blue-300 px-2 border-r border-white/20 h-full flex items-center">Rankings</a>
                 <a href="#" class="hover:text-blue-300 px-2 border-r border-white/20 h-full flex items-center">Venues</a>
                 <a href="#" class="hover:text-blue-300 px-2 border-r border-white/20 h-full flex items-center">Archive</a>
                 <a href="#" class="hover:text-blue-300 px-2 pl-4 h-full flex items-center">My Account</a>
             </nav>
 
+    <!-- Mobile Hamburger Menu -->
+
             <button id="mobileMenuButton" class="md:hidden text-white focus:outline-none hover:text-blue-300">
                 <img src="HamburgerMenu.svg" alt="Menu Icon" class="w-8 h-8">
             </button>
         </div>
 
-        <nav id="mobile-menu" class="md:hidden flex flex-col space-y-2 mt-4 pt-4 border-t border-white/20 uppercase font-bold tracking-wider text-sm">
-                <a href="#" class="hover:text-blue-300 block py-2">Fixtures and Results</a>
-                <a href="#" class="hover:text-blue-300 block py-2">Rankings</a>
-                <a href="#" class="hover:text-blue-300 block py-2">Venues</a>
-                <a href="#" class="hover:text-blue-300 block py-2">Archive</a>
-                <a href="#" class="hover:text-blue-300 block py-2">My Account</a>
+    <!-- Hidden Mobile Menu -->
+
+        <nav id="mobile-menu" class="hidden md:hidden absolute flex top-full w-full left-0 z-50 flex-col border-t border-white/20 uppercase font-bold tracking-wider text-sm bg-[#333333] text-white">
+                <a href="FixturesAndResults.html" class="hover:text-blue-300 block py-2 px-5">Fixtures and Results</a>
+                <a href="#" class="hover:text-blue-300 block py-2 px-5">Rankings</a>
+                <a href="#" class="hover:text-blue-300 block py-2 px-5">Venues</a>
+                <a href="#" class="hover:text-blue-300 block py-2 px-5">Archive</a>
+                <a href="#" class="hover:text-blue-300 block py-2 px-5">My Account</a>
         </nav>
 
     </header>
 
+    <!-- Background Blur when drop menu is clicked-->
+
+    <div id="menu-overlay" class="fixed inset-0 bg-black/70 z-40 hidden md:hidden backdrop-blur-sm transition-opacity"></div>
+
     <main class="max-w-[1800px] mx-auto px-6 py-8 flex flex-col lg:flex-row gap-6 items-start">
 
-        <aside class="w-full lg:w-1/4 lg:sticky lg:top-[140px] z-40">
-            <div class="relative bg-gradient-to-t from-[#051A35] to-[#0E4B9B] text-white h-[450px] lg:h-[800px] p-6 shadow-xl overflow-hidden border-4 border-[#5b6a7a]">
-                <div class="absolute inset-0 bg-black/20 z-0">
-
-        <!--Add news image here-->
-
-                    <img src="IMG_7161.jpg" alt="Sample Table Tennis Image for News" class="w-full h-full object-cover opacity-50">
-                </div> 
+        <aside class="w-full lg:w-1/4 lg:sticky lg:top-[140px] z-30">
+            <div class="relative group bg-gradient-to-t from-[#051A35] to-[#0E4B9B] text-white h-[450px] lg:h-[800px] p-6 overflow-hidden border-4 border-[#5b6a7a]">
                 
-                <div class="relative z-10 flex flex-col h-full justify-between">
+    <!--Add news image here-->
+
+                <a href="#" class="absolute inset-0 bg-black/20 z-0 block">
+                    <img src="IMG_7161.jpg" alt="Sample Table Tennis Image for News" class="w-full h-full object-cover opacity-50 transistion-transform duration-700 ease-in-out group-hover:scale-110">
+                </a>
+                
+                <div class="relative z-10 flex flex-col h-full justify-between pointer-events-none">
                     <div>
                         <h2 class="text-3xl font-extrabold uppercase leading-tight mb-4 underline decoration-2 underline-offset-4">Massive News About Norwich's Best Player!</h2>
                         <p class="text-sm font-semibold mb-2">20/3/26</p>
                         <p class="text-lg font-bold leading-snug">ONE OF NORWICH'S BEST PLAYER HAS MADE GREAT STRIDES IN TABLE TENNIS REPRESENTING HIS HOME CLUB</p>
+                        <a href="#" class="mt-3 pointer-events-auto inline-block border-2 border-white px-4 py-2 text-sm font-bold uppercase hover:bg-white hover:text-[#0e4b9b] transistion-colors">
+                            Read More
+                        </a>
                     </div>
                     
                     <div class="flex justify-between text-sm font-bold mt-auto pt-4 border-t border-white/30">
@@ -114,9 +132,9 @@
 
         <section class="w-full lg:w-3/4 space-y-8">
 
-            <div class="bg-[#5b6a7a] p-1 rounded shadow-lg">
+            <div class="bg-[#5b6a7a] p-1 rounded">
 
-            <!-- Recent Matches -->
+    <!-- Recent Matches -->
 
                 <div class="flex items-center gap-2 mb-2 p-2 pb-0">
                     <h2 class="text-white text-xl font-bold uppercase mr-4 underline underline-offset-4 decoration-2">Recent Matches</h2>
@@ -129,15 +147,15 @@
                     </div>
                 </div>
 
-                <div id="recent-matches" class="bg-[#a8c2de] p-4 flex gap-4 overflow-x-auto scrollbar relative items-center">
-                    <!-- Recent match cards will be dynamically inserted here by JavaScript -->
+                <div id="recent-matches" class="bg-[#7babe9] p-4 flex gap-4 overflow-x-auto scrollbar relative items-center">
+    <!-- Recent match cards will be dynamically inserted here by JavaScript -->
 
                 </div>
             </div>
 
-            <!-- Season Table -->
+    <!-- Season Table -->
 
-            <div class="bg-[#5b6a7a] p-1 rounded shadow-lg">
+            <div class="bg-[#5b6a7a] p-1 rounded">
                 <div class="flex items-center gap-2 mb-2 p-2 pb-0">
                     <h2 class="text-white text-xl font-bold uppercase mr-4 underline underline-offset-4 decoration-2">Season Table</h2>
                     <div id="season-tabs" class="flex space-x-1 text-sm font-bold mt-2 sm:mt-0 overflow-x-auto hide-scrollbar max-w-full pb-1">
@@ -165,14 +183,14 @@
                             </tr>
                         </thead>
                         <tbody id="season-table-body" class="text-sm font-semibold">
-                            <!-- Season table data will be dynamically inserted here by JavaScript -->
+    <!-- Season table data will be dynamically inserted here by JavaScript -->
                         </tbody>
                     </table>
                 </div>
             </div>
 
-            <!-- Player Rankings -->
-            <div class="bg-[#5b6a7a] p-1 rounded shadow-lg">
+    <!-- Player Rankings -->
+            <div class="bg-[#5b6a7a] p-1 rounded">
                 <div class="flex items-center gap-2 mb-2 p-2 pb-0 flex-wrap">
                     <h2 class="text-white text-xl font-bold uppercase mr-4 underline underline-offset-4 decoration-2">Player Rankings</h2>
                     <div id="Player-tabs" class="flex space-x-1 text-sm font-bold mt-2 sm:mt-0 overflow-x-auto hide-scrollbar max-w-full pb-1">
@@ -197,12 +215,11 @@
                             </tr>
                         </thead>
                         <tbody id="player-ranking-table-body" class="text-sm font-semibold">
-                            <!-- Player ranking data will be dynamically inserted here by JavaScript -->
+    <!-- Player ranking data will be dynamically inserted here by JavaScript -->
                         </tbody>
                     </table>
                 </div>
-            </div>
-
+            </div>  
         </section>
     </main>
 </body>
