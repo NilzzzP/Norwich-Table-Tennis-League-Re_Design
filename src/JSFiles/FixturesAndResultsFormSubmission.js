@@ -43,11 +43,34 @@ document.addEventListener('DOMContentLoaded', ()=>{
 //  DATA RENDERING FUNCTION
 
     async function renderData(division, category) {
-        dataDisplayArea.innerHTML = `<p>Displaying ${category} for ${division}</p>`;
 
         try {
-            if (category.toUpperCase() === 'Season Table'){
-                const response = await fetch ('seasonTable.csv');
+            if (category.toUpperCase() === 'SEASON TABLE'){
+
+                dataDisplayArea.innerHTML = `
+
+                <div class="bg-gradient-to-b from-[#7babe9] to-[#051A35] p-4 overflow-x-auto text-white">
+                    <table class="w-full text-center table-auto">
+                        <thead>
+                            <tr class="uppercase font-bold text-sm border-b border-[#5b6a7a]/30">
+                                <th class="py-3 px-2 text-left w-12">Rank</th>
+                                <th class="py-3 px-2 text-left">Team</th>
+                                <th class="py-3 px-2">Played</th>
+                                <th class="py-3 px-2">Win</th>
+                                <th class="py-3 px-2">Lose</th>
+                                <th class="py-3 px-2">Draw</th>
+                                <th class="py-3 px-2">Sets For/Against</th>
+                                <th class="py-3 px-2">Games For/Against</th>
+                                <th class="py-3 px-2">Points</th>
+                            </tr>
+                        </thead>
+                        <tbody id="season-table-body" class="text-sm font-semibold">
+                        </tbody>
+                    </table>
+                </div>
+
+                `;
+                const response = await fetch ('SeasonTable.csv');
                 const csvText = await response.text();
 
                 const rows = csvText.split('\n').filter(row => row.trim() !== '');
@@ -55,7 +78,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
                     const columns = row.split(',');
                     return columns[0].trim().toUpperCase() === division.toUpperCase();
                 });
-                const tableBody = document.getElementById('data-display-area');
+                const tableBody = document.getElementById('season-table-body');
                 tableBody.innerHTML = '';
 
 //  COPIED FROM HomepageSeasonTable.js
@@ -71,6 +94,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
                     const sets = cols[7].trim();
                     const games = cols[8].trim();
                     const points = cols[9].trim();
+                    const table = document.createElement('tbody');
+                    table.innerHTML = ``;
                     const tr = document.createElement('tr');
                     const borderclass = index < divisionData.length -1 ? 'border-b border-[#5b6a7a]/10' : '';
                     tr.className = `${borderclass}hover:bg-white/20 transistion-colors`;
@@ -100,5 +125,4 @@ document.addEventListener('DOMContentLoaded', ()=>{
             renderData(currentDivision, currentCategory);
         });
     };
-
 })
