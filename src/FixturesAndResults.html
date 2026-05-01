@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./JSFiles/HomepageHamburgerMenu.js"></script>
+    <script src="./JSFiles/FixturesAndResultsFormSubmission.js"></script>
     
     <style>
         /* Custom scrollbar for horizontal scrolling elements */
@@ -39,11 +40,11 @@
     <!-- Background Image with Gradient Overlay -->
     
     <div class="fixed inset-0 z-[-1]">
-        <div class="absolute inset-0 bg-[url('abstractBackground.jpg')] bg-cover bg-center bg-no-repeat opacity-40"></div>
+        <div class="absolute inset-0 bg-[url('Icons-and-svgs/abstractBackground.jpg')] bg-cover bg-center bg-no-repeat opacity-40"></div>
         <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/60 to-black"></div>
     </div>
 
-    <header class="sticky top-0 relative z-50 shadow-md">
+    <header class="sticky top-0 relative z-50">
 
     <!-- Header -->
 
@@ -63,7 +64,7 @@
 
             <div class="flex items-center">
                 <a href="main.html">
-                <img src="NorwichTTLeagueLogo.jpg" alt="Norwich & District Table Tennis League" class="h-20 object-contain">
+                <img src="Icons-and-svgs/NorwichTTLeagueLogo.jpg" alt="Norwich & District Table Tennis League" class="h-20 object-contain">
                 </a>
             </div>
 
@@ -78,7 +79,7 @@
     <!-- Mobile Hamburger Menu -->
 
             <button id="mobileMenuButton" class="md:hidden text-white focus:outline-none hover:text-blue-300">
-                <img src="HamburgerMenu.svg" alt="Menu Icon" class="w-8 h-8">
+                <img src="Icons-and-svgs/HamburgerMenu.svg" alt="Menu Icon" class="w-8 h-8">
             </button>
         </div>
 
@@ -103,48 +104,76 @@
 
         <!-- Selection for parameters -->
 
-        <aside class="w-full lg:w-1/2 lg:sticky lg:top-[140px] z-30 bg-[#5b6a7a] p-5 relative h-fit">
-            <div class="flex items-center gap-2 mb-2 p-2 pb-0">
-                <div id="season-tabs" class="flex space-x-1 text-sm mt-2 sm:mt-0 font-bold overflow-x-auto hide-scrollbar max-w-full pb-1">
-                    <button class="bg-[#488cd8] px-3 py-1 text-white border-2 border-[#1a4b8c]">PREMIER</button>
-                    <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">DIVISION 1</button>
-                    <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">DIVISION 2</button>
-                    <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">DIVISION 3</button>
-                    <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">DIVISION 4</button>
-                </div>
-                <button class="bg-[#c2cdd8] text-black font-bold text-xl py-1 uppercase px-4 hover:bg-white transition-colors flex-grow sm:flex-grow-0 border border-black/20 mb-1">
-                    Show Selected
-                </button>
+        <aside class="w-full lg:w-1/2 lg:sticky lg:top-[140px] z-30 bg-[#5b6a7a] p-5 relative h-fit border-4 border-[#788a9e]">
+    
+    <!-- Top Controls Row -->
+    <div class="flex items-center gap-2 mb-2 p-2 pb-0">
+        <div id="division-tabs" class="flex space-x-1 text-sm mt-2 sm:mt-0 font-bold overflow-x-auto hide-scrollbar max-w-full pb-1">
+            <button class="bg-[#488cd8] px-3 py-1 text-white border-2 border-[#1a4b8c]">PREMIER</button>
+            <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">DIVISION 1</button>
+            <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">DIVISION 2</button>
+            <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">DIVISION 3</button>
+            <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white">DIVISION 4</button>
+        </div>
+        <button id="submit-form" class="bg-[#c2cdd8] text-black font-bold text-xl py-1 uppercase px-4 hover:bg-white transition-colors flex-grow sm:flex-grow-0 border border-black/20 mb-1">
+            Show Selected
+        </button>
+    </div>
+    
+    <!-- Interactive Image Buttons Stack -->
+    <div id="category-buttons" class="flex flex-col gap-[6px] text-white">
+        <button class="w-full text-left relative group bg-gradient-to-r from-[#488cd8] to-[#051a35] text-white px-4 py-6 overflow-hidden border-2 border-[#0d2749] transistion-colors">
+            <div class="absolute inset-0 bg-black/20 z-0 block">
+                <img src="Icons-and-svgs/Season-Table-Background-selector.jpg" alt="Season Table" class="w-full h-full object-cover opacity-30 transition-transform duration-700 ease-in-out group-hover:scale-110">
             </div>
-            <div class="flex flex-col gap-[6px] text-white">
-                <button class="w-full text-left bg-gradient-to-r from-[#8e98a3] to-[#051A35] hover:bg-[#a2acb8]  text-2xl uppercase px-4 py-6 transition-colors">
-                    Season Table
-                </button>
-                <button class="w-full text-left bg-gradient-to-r from-[#8e98a3] to-[#051a35] hover:bg-[#a2acb8]  text-2xl uppercase px-4 py-6 transition-colors">
-                    Upcoming Fixtures
-                </button>
-                <button class="w-full text-left bg-gradient-to-r from-[#8e98a3] to-[#051a35] hover:bg-[#a2acb8]  text-2xl uppercase px-4 py-6 transition-colors">
-                    Results
-                </button>
-                <button class="w-full text-left bg-gradient-to-r from-[#8e98a3] to-[#051a35] hover:bg-[#a2acb8]  text-2xl uppercase px-4 py-6 transition-colors">
-                    Season Player Stats
-                </button>
-                <button class="w-full text-left bg-gradient-to-r from-[#488cd8] to-[#051a35] text-white border-2 border-[#1a4b8c] text-2xl uppercase px-4 py-6">
-                    Player of the Match Stats
-                </button>
+            <div class="relative z-10 pointer-events-none">
+                <span class="text-2xl uppercase tracking-tight font-bold">Season Table</span>
             </div>
-        </aside>
+        </button>
+        <button class="w-full text-left relative group bg-gradient-to-r from-[#8e98a3] to-[#051a35] px-4 py-6 overflow-hidden transition-colors">
+            <div class="absolute inset-0 bg-black/20 z-0 block">
+                <img src="Icons-and-svgs/UpcomingFixtures-Table-background-selector.jpg" alt="Upcoming Fixtures" class="w-full h-full object-cover opacity-30 transition-transform duration-700 ease-in-out group-hover:scale-110">
+            </div>
+            <div class="relative z-10 pointer-events-none">
+                <span class="text-2xl uppercase tracking-tight font-bold ">Upcoming Fixtures</span>
+            </div>
+        </button>
+        <button class="w-full text-left relative group bg-gradient-to-r from-[#8e98a3] to-[#051a35] px-4 py-6 overflow-hidden transition-colors">
+            <div class="absolute inset-0 bg-black/20 z-0 block">
+                <img src="Icons-and-svgs/Results-Table-Background-selector.jpg" alt="Results" class="w-full h-full object-cover opacity-30 transition-transform duration-700 ease-in-out group-hover:scale-110">
+            </div>
+            <div class="relative z-10 pointer-events-none">
+                <span class="text-2xl uppercase tracking-tight font-bold">Results</span>
+            </div>
+        </button>
+        <button class="w-full text-left relative group bg-gradient-to-r from-[#8e98a3] to-[#051a35] px-4 py-6 overflow-hidden transition-colors">
+            <div class="absolute inset-0 bg-black/20 z-0 block">
+                <img src="Icons-and-svgs/SeasonPlayerStats-Table-Background-selector.jpg" alt="Season Player Stats" class="w-full h-full object-cover opacity-30 transition-transform duration-700 ease-in-out group-hover:scale-110">
+            </div>
+            <div class="relative z-10 pointer-events-none">
+                <span class="text-2xl uppercase tracking-tight font-bold">Season Player Stats</span>
+            </div>
+        </button>
+        <button class="w-full text-left relative group bg-gradient-to-r from-[#8e98a3] to-[#051a35] px-4 py-6 overflow-hidden transition-colors">
+            <div class="absolute inset-0 bg-black/20 z-0 block ">
+                <img src="Icons-and-svgs/POTM-Table-background-selector.jpg" alt="Player of the Match Stats" class="w-full h-full object-cover opacity-30 transition-transform duration-700 ease-in-out group-hover:scale-110">
+            </div>
+            <div class="relative z-10 pointer-events-none">
+                <span class="text-2xl uppercase tracking-tight font-bold">Player of the Match Stats</span>
+            </div>
+        </button>
+
+    </div>
+</aside>
 
         <section class="w-full lg:w-1/2 space-y-8 bg-gradient-to-b from-[#7babe9] to-[#051A35] p-5">
             <div class="flex flex-wrap gap-2 mb-3">
-                <button class="flex items-center gap-2 bg-[#d8e0e8] hover:bg-white px-6 py-1.5 text-sm font-bold border-2 border-[#1a4b8c] uppercase transition-colors shadow-sm">
-                    <img src="FilterIcon.svg" class="w-4 h-4 text-black">
+                <button class="flex items-center gap-2 bg-[#d8e0e8] hover:bg-white px-6 py-1.5 text-sm font-bold border-2 border-[#1a4b8c] uppercase transition-colors">
+                    <img src="Icons-and-svgs/FilterIcon.svg" class="w-4 h-4 text-black">
                     FILTER
                 </button>
-                <button class="flex items-center gap-2 bg-[#d8e0e8] hover:bg-white px-6 py-1.5 text-sm font-bold border-2 border-[#1a4b8c] uppercase transition-colors shadow-sm">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
-                    </svg>
+                <button class="flex items-center gap-2 bg-[#d8e0e8] hover:bg-white px-6 py-1.5 text-sm font-bold border-2 border-[#1a4b8c] uppercase transition-colors">
+                    <img src="Icons-and-svgs/SortIcon.svg" class="w-4 h-4 text-black">
                     SORT
                 </button>
             </div>
