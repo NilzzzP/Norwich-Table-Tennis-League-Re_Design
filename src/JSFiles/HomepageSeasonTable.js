@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 async function loadSeasonData(divisionName){
     try{
-        const response = await fetch ('seasonTable.csv');
+        const response = await fetch ('SeasonTable.csv');
         const csvText = await response.text();
 
         const rows = csvText.split('\n').filter(row => row.trim() !== '');
