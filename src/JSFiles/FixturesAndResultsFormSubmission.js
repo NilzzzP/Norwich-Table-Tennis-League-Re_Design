@@ -150,8 +150,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
                     const homeScoreInt = parseInt(homeScore);
                     const awayScoreInt = parseInt(awayScore);
 
-                    const matchDiv = document.createElement('div');
-                    matchDiv.className = 'bg-[#f0f4f8] p-7 w-full text-center ';
+                    const matchDiv = document.createElement('a');
+                    matchDiv.href = 'match-details.html'
+                    matchDiv.className = 'bg-[#f0f4f8] p-7 w-full text-center flex-shrink-0 block transition-transform duration-300 ease-in-out hover:scale-105';
                     if (homeScoreInt > awayScoreInt) {
                         matchDiv.innerHTML = `
                             <div class="flex justify-between font-bold text-sm mb-1 uppercase">
