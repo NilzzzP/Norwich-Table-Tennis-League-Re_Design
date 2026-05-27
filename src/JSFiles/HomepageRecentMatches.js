@@ -20,12 +20,13 @@ async function LoadRecentMatches(divisionName){
             const homeScore = cols[4].trim();
             const awayScore = cols[5].trim();
             const POTM = cols[6].trim();
+            const URL = cols[7].trim();
 
             const homeScoreInt = parseInt(homeScore);
             const awayScoreInt = parseInt(awayScore);
 
             const matchDiv = document.createElement('a');
-            matchDiv.href = 'match-details.html'
+            matchDiv.href = URL;
             matchDiv.className = 'bg-[#f0f4f8] p-7 min-w-[200px] text-center flex-shrink-0 block transition-transform duration-300 ease-in-out hover:scale-105';
             if (homeScoreInt > awayScoreInt) {
                 matchDiv.innerHTML = `

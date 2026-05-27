@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900&display=swap" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="./JSFiles/HomepageHamburgerMenu.js"></script>
+        <script src="./JSFiles/Premier1.js"></script>
 
 
         <style>
@@ -107,53 +108,18 @@
 
         <!-- Score Display starts here -->
         
-                <div class="flex flex-col md:flex-row justify-between items-stretch gap-6 md:gap-12 relative">
+                <div id="MatchSummary" class="flex flex-col md:flex-row justify-between items-stretch gap-6 md:gap-12 relative">
                     
-                    <div class="flex-1 flex flex-col items-center justify-center p-8 sm:p-12 border-4 border-[#1a4b8c] bg-[#e6ecef] relative">
-                        
-                        <div class="absolute top-0 right-0 bg-[#1a4b8c] text-white text-xs sm:text-sm font-bold px-3 py-1 uppercase tracking-widest border-b-2 border-l-2 border-[#1a4b8c]">
-                            Winner
-                        </div>
-                        
-                        <h2 class="text-3xl sm:text-5xl font-black uppercase text-[#1a4b8c] mb-6 text-center tracking-tight">
-                            Wensum A
-                        </h2>
-                        <span class="text-7xl sm:text-9xl font-bold text-[#1a4b8c] leading-none">
-                            8
-                        </span>
-                    </div>
-
-                    <div class="hidden md:flex flex-col items-center justify-center px-2">
-                        <span class="text-7xl font-black text-gray-300 tracking-widest">|</span>
-                    </div>
-
-                    <div class="flex-1 flex flex-col items-center justify-center p-8 sm:p-12 border-4 border-transparent">
-                        
-                        <h2 class="text-3xl sm:text-5xl font-black uppercase text-white mb-6 text-center tracking-tight">
-                            Gothic B
-                        </h2>
-                        <span class="text-7xl sm:text-9xl font-bold text-white leading-none">
-                            2
-                        </span>
-                    </div>
+                <!-- Adding Scores Dynamically here -->
 
                 </div>
 
         <!-- Scorecard Information-->
 
-                <div class="flex flex-col gap-2 text-sm sm:text-base text-white">
-                    <p>
-                        <span class="uppercase tracking-wider mr-2">Match Date:</span>
-                        <span>12/05/26</span>
-                    </p>
-                    <p>
-                        <span class="uppercase tracking-wider mr-2">Upload Date:</span>
-                        <span>12/05/26</span>
-                    </p>
-                    <p>
-                        <span class="uppercase tracking-wider mr-2">Approved By:</span> 
-                        <span>John Doe</span>
-                    </p>
+                <div id="ScorecardDetails" class="flex flex-col gap-2 text-sm sm:text-base text-white">
+                    
+                <!-- Adding Scorecard Information Dynamically here -->
+                    
                 </div>
                 <a href="#" >
                     <button class="bg-[#c2cdd8] px-3 py-1 text-gray-700 hover:bg-white mb-3 flex-shrink-0 mt-3">View Original Scoresheet</button>
@@ -171,92 +137,18 @@
 
         <!-- Home Team members display -->
                     
-                    <div class="md:pr-12 flex flex-col gap-6">
+                    <div id="HomeTeamMembers" class="md:pr-12 flex flex-col gap-6">
                         
-                        <h3 class="text-2xl font-black uppercase text-[#020913] tracking-widest mb-2">Home Team</h3>
-
-                        <div class="flex items-center gap-4 sm:gap-6">
-                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-white shrink-0 overflow-hidden bg-gray-800">
-                                <img src="Icons-and-svgs/Player1.jpg" alt="Player 1 Photo" class="w-full h-full object-cover">
-                            </div>
-                            <div class="text-2xl sm:text-3xl font-black text-[#020913] w-6 sm:w-8 text-center">1.</div>
-                            <div class="flex-1 flex gap-2 sm:gap-4">
-                                <div class="border-b-2 border-white/50 pb-1 flex-1 font-bold text-base sm:text-lg uppercase px-1 truncate tracking-wide">Marcus Orelio</div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center gap-4 sm:gap-6">
-                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-white shrink-0 overflow-hidden bg-gray-800">
-                                <img src="Icons-and-svgs/player2.jpg" alt="Player 2 Photo" class="w-full h-full object-cover">
-                            </div>
-                            <div class="text-2xl sm:text-3xl font-black text-[#020913] w-6 sm:w-8 text-center">2.</div>
-                            <div class="flex-1 flex gap-2 sm:gap-4">
-                                <div class="border-b-2 border-white/50 pb-1 flex-1 font-bold text-base sm:text-lg uppercase px-1 truncate tracking-wide">Sebastian Gredge</div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center gap-4 sm:gap-6">
-                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-white shrink-0 overflow-hidden bg-gray-800">
-                                <img src="Icons-and-svgs/player3.jpg" alt="Player 3 Photo" class="w-full h-full object-cover">
-                            </div>
-                            <div class="text-2xl sm:text-3xl font-black text-[#020913] w-6 sm:w-8 text-center">3.</div>
-                            <div class="flex-1 flex gap-2 sm:gap-4">
-                                <div class="border-b-2 border-white/50 pb-1 flex-1 font-bold text-base sm:text-lg uppercase px-1 truncate tracking-wide">Hannah Mitchel</div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center gap-4 sm:gap-6 mt-4 pt-6 border-t-2 border-dashed border-white/30">
-                            <div class="text-2xl sm:text-3xl font-black text-gray-400 w-6 sm:w-8 text-center">D.</div>
-                            <div class="flex-1 border-b-2 border-gray-400 pb-1">
-                                <div class="font-bold text-base sm:text-lg uppercase text-white px-1 truncate tracking-wide">1 | 3</div>
-                            </div>
-                        </div>
+                        <!-- Insert Home Team Dynamically -->
                         
                     </div>
 
         <!-- Away team members display -->
 
 
-                    <div class="md:pl-12 flex flex-col gap-6 pt-10 md:pt-0 border-t-4 md:border-t-0 border-white/20 md:border-none">
+                    <div id="AwayTeamMembers" class="md:pl-12 flex flex-col gap-6 pt-10 md:pt-0 border-t-4 md:border-t-0 border-white/20 md:border-none">
                         
-                        <h3 class="text-2xl font-black uppercase text-gray-300 tracking-widest mb-2">Away Team</h3>
-
-                        <div class="flex items-center gap-4 sm:gap-6">
-                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-white shrink-0 overflow-hidden bg-gray-800">
-                                <img src="Icons-and-svgs/player4.jpg" alt="Player 4 Photo" class="w-full h-full object-cover">
-                            </div>
-                            <div class="text-2xl sm:text-3xl font-black text-white/50 w-6 sm:w-8 text-center">1.</div>
-                            <div class="flex-1 flex gap-2 sm:gap-4">
-                                <div class="border-b-2 border-white/50 pb-1 flex-1 font-bold text-base sm:text-lg uppercase px-1 truncate tracking-wide">Peter Madness</div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center gap-4 sm:gap-6">
-                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-white shrink-0 overflow-hidden bg-gray-800">
-                                <img src="Icons-and-svgs/player5.jpg" alt="Player 5 Photo" class="w-full h-full object-cover">
-                            </div>
-                            <div class="text-2xl sm:text-3xl font-black text-white/50 w-6 sm:w-8 text-center">2.</div>
-                            <div class="flex-1 flex gap-2 sm:gap-4">
-                                <div class="border-b-2 border-white/50 pb-1 flex-1 font-bold text-base sm:text-lg uppercase px-1 truncate tracking-wide">Thu Minh</div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center gap-4 sm:gap-6">
-                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-white shrink-0 overflow-hidden bg-gray-800">
-                                <img src="Icons-and-svgs/player6.jpg" alt="Player 6 Photo" class="w-full h-full object-cover">
-                            </div>
-                            <div class="text-2xl sm:text-3xl font-black text-white/50 w-6 sm:w-8 text-center">3.</div>
-                            <div class="flex-1 flex gap-2 sm:gap-4">
-                                <div class="border-b-2 border-white/50 pb-1 flex-1 font-bold text-base sm:text-lg uppercase px-1 truncate tracking-wide">Jasmine Pharrel</div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center gap-4 sm:gap-6 mt-4 pt-6 border-t-2 border-dashed border-white/30">
-                            <div class="text-2xl sm:text-3xl font-black text-gray-400 w-6 sm:w-8 text-center">D.</div>
-                            <div class="flex-1 border-b-2 border-gray-400 pb-1">
-                                <div class="font-bold text-base sm:text-lg uppercase text-white px-1 truncate tracking-wide">1 | 2</div>
-                            </div>
-                        </div>
+                        <!-- Insert Away Team Dynamically -->
 
                     </div>
 
@@ -270,51 +162,12 @@
 
         <section class="mx-auto px-4 py-12 flex flex-col gap-4 font-sans">
 
-            <h3 class="text-3xl font-black uppercase text-[#dae0e7] mb-4 tracking-tight">Match Results</h3>
+            <h3 id="MatchesContainer" class="text-3xl font-black uppercase text-[#dae0e7] mb-4 tracking-tight">Match Results</h3>
 
     <!-- Match 1 -->
 
-            <div class="border-4 border-[#5b6a7a] bg-[#e6ecef] p-4 sm:p-6 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 ">
-                
-                <div class="flex flex-col w-full md:w-2/5 gap-2">
-                    <div class="flex justify-between items-center px-4 py-2 text-gray-600 text-lg sm:text-xl border-2 border-transparent">
-                        <span class="uppercase truncate pr-4">Home 2</span>
-                        <span>2</span>
-                    </div>
-                    <div class="flex justify-between items-center px-4 py-2 font-bold bg-[#a2c1e8] text-[#051A35]  text-lg sm:text-xl">
-                        <span class="uppercase truncate pr-4">Away 1</span>
-                        <span>3</span>
-                    </div>
-                </div>
-
-                <div class="flex justify-center items-center gap-3 sm:gap-6 text-xl sm:text-2xl text-gray-800">
-                    <div class="flex flex-col items-center gap-3 border-r-4 border-[#5b6a7a]/20 pr-3 sm:pr-6">
-                        <div class="px-1.5 sm:px-3 py-0.5 sm-py-1 bg-[#a2c1e8] font-bold text-[#051A35]">11</div> 
-                        <div class="px-1.5 sm:px-3 py-0.5 sm-py-1 border border-transparent">8</div>
-                    </div>
-                    <div class="flex flex-col items-center gap-3 border-r-4 border-[#5b6a7a]/20 pr-3 sm:pr-6">
-                        <div class="px-1.5 sm:px-3 py-0.5 sm-py-1 border border-transparent">9</div>
-                        <div class="px-1.5 sm:px-3 py-0.5 sm-py-1 bg-[#a2c1e8] font-bold text-[#051A35]">11</div>
-                    </div>
-                    <div class="flex flex-col items-center gap-3 border-r-4 border-[#5b6a7a]/20 pr-3 sm:pr-6">
-                        <div class="px-1.5 sm:px-3 py-0.5 sm-py-1 bg-[#a2c1e8] font-bold text-[#051A35]">14</div>
-                        <div class="px-1.5 sm:px-3 py-0.5 sm-py-1 border border-transparent">12</div>
-                    </div>
-                    <div class="flex flex-col items-center gap-3 border-r-4 border-[#5b6a7a]/20 pr-3 sm:pr-6">
-                        <div class="px-1.5 sm:px-3 py-0.5 sm-py-1 border border-transparent">9</div>
-                        <div class="px-1.5 sm:px-3 py-0.5 sm-py-1 bg-[#a2c1e8] font-bold text-[#051A35]">11</div>
-                    </div>
-                    <div class="flex flex-col items-center gap-3">
-                        <div class="px-1.5 sm:px-3 py-0.5 sm-py-1 border border-transparent">7</div>
-                        <div class="px-1.5 sm:px-3 py-0.5 sm-py-1 bg-[#a2c1e8] font-bold text-[#051A35]">11</div>
-                    </div>
-                </div>
-
-                <div class="w-full md:w-1/6 flex justify-center md:justify-end items-center mt-4 md:mt-0">
-                    <span class="text-4xl sm:text-5xl font-black text-[#1a4b8c] tracking-widest whitespace-nowrap">2 - 3</span>
-                </div>
-
-            </div>
+            <!--Inserts match 1 here-->
+            
     <!-- Match 2 -->
 
             <div class="border-4 border-[#5b6a7a] bg-[#e6ecef] p-4 sm:p-6 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
