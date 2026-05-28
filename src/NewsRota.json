@@ -1,0 +1,23 @@
+[
+    {
+        "Title": "Massive News About Norwich's Best Player!",
+        "Date": "20/03/26",
+        "ImageURL": "Icons-and-svgs/IMG_7161.jpg",
+        "Subtext": "ONE OF NORWICH'S BEST PLAYER HAS MADE GREAT STRIDES IN TABLE TENNIS REPRESENTING HIS HOME CLUB",
+        "ArticleURL": "news1.html"
+    },
+    {
+        "Title": "Divisional Cup Medals Handed To Winning Teams",
+        "Date": "25/03/26",
+        "ImageURL": "Icons-and-svgs/Medal.jpg",
+        "Subtext": "Local League winners have been given their medals at tonights AGM",
+        "ArticleURL": "news2.html"
+    },
+    {
+        "Title": "Upcoming Tournament Details",
+        "Date": "28/03/26",
+        "ImageURL": "Icons-and-svgs/tournament.jpg",
+        "Subtext": "Registration is now open for the annual county championships",
+        "ArticleURL": "news3.html"
+    }
+]
