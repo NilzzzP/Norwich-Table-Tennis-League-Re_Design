@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', async ()=>{
     let Doubles;
 
 
-    const data = await fetchMatchData('match_data/Premier1.txt')
+    const data = await fetchMatchData('match_data/Premier5.txt')
     console.log(data);
 
     //Fetching and parsing data
