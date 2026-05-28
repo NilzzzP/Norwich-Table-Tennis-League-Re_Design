@@ -382,6 +382,12 @@ document.addEventListener('DOMContentLoaded', async ()=>{
             }
 
         }
+        matchdiv2v1.innerHTML+=`
+        
+            <div class="w-full md:w-1/6 flex justify-center md:justify-end items-center mt-4 md:mt-0">
+                <span class="text-4xl sm:text-5xl font-black text-[#1a4b8c] tracking-widest whitespace-nowrap">${homegamecounter} - ${awaygamecounter}</span>
+            </div>
+        `
         matchesContainer.append(matchdiv2v1);
     }
     
@@ -422,7 +428,7 @@ document.addEventListener('DOMContentLoaded', async ()=>{
                 `
                 matchdiv2v1.append(matchdiv2v1scores);
 
-            }  else if (currentset[0] < currentset[1]){ //meaning away team won this game
+            }  else if (currentset[0] < currentset[1]){ //meaning home team won this game
                 
                 matchdiv2v1scores.innerHTML+=`
                 
@@ -439,10 +445,9 @@ document.addEventListener('DOMContentLoaded', async ()=>{
     
         matchdiv2v1.innerHTML+=`
         
-        <div class="w-full md:w-1/6 flex justify-center md:justify-end items-center mt-4 md:mt-0">
-            <span class="text-4xl sm:text-5xl font-black text-[#1a4b8c] tracking-widest whitespace-nowrap">${homegamecounter} - ${awaygamecounter}</span>
-        </div>
-    
+            <div class="w-full md:w-1/6 flex justify-center md:justify-end items-center mt-4 md:mt-0">
+                <span class="text-4xl sm:text-5xl font-black text-[#1a4b8c] tracking-widest whitespace-nowrap">${homegamecounter} - ${awaygamecounter}</span>
+            </div>
         `
         
         matchesContainer.append(matchdiv2v1);
