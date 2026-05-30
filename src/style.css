@@ -1849,8 +1849,12 @@ video {
     top: 140px;
   }
 
-  .lg\:h-\[800px\] {
-    height: 800px;
+  .lg\:h-\[80vh\] {
+    height: 80vh;
+  }
+
+  .lg\:h-\[calc\(95vh-140px\)\] {
+    height: calc(95vh - 140px);
   }
 
   .lg\:min-h-\[800px\] {
