@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norwich & District Table Tennis League</title>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./JSFiles/HomepageHamburgerMenu.js"></script>
+    <script src="./JSFiles/FixturesAndResultsFormSubmission.js"></script>
+    
+    <style>
+        /* Custom scrollbar for horizontal scrolling elements */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    FontFamily: {
+                        /* Using the same font as TableTennisEngland website */
+                        sans: ['poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#333333] text-gray-800 antialiased min-h-[150vh] font-sans">
+
+    <!-- Background Image with Gradient Overlay -->
+    
+    <div class="fixed inset-0 z-[-1]">
+        <div class="absolute inset-0 bg-[url('Icons-and-svgs/abstractBackground.jpg')] bg-cover bg-center bg-no-repeat opacity-40"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/60 to-black"></div>
+    </div>
+
+    <header class="sticky top-0 relative z-50">
+
+    <!-- Header -->
+
+        <div class="bg-gradient-to-r from-[#7babe9] to-[#051A35] text-white flex justify-end px-5 py-3 lg:px-20 lg:py-1 text-sm font-semibold tracking-wider space-x-6">
+
+    <!-- Upper Header -->
+
+            <a href="#" class="hover:text-gray-300">CONTACT US</a>
+            <a href="#" class="hover:text-gray-300">FIND A CLUB</a>
+            <a href="#" class="hover:text-gray-300">NEWS</a>
+            <a href="#" class="hover:text-gray-300">LOGIN</a>
+        </div>
+
+        <div class="bg-gradient-to-r from-[#0E4B9B] to-[#051A35] text-white flex justify-between items-center px-5 lg:px-20 py-4">
+
+    <!-- Logo Insertion + Lower Header -->
+
+            <div class="flex items-center">
+                <a href="index.html">
+                <img src="Icons-and-svgs/NorwichTTLeagueLogo.jpg" alt="Norwich & District Table Tennis League" class="h-20 object-contain">
+                </a>
+            </div>
+
+            <nav class="hidden md:flex space-x-2 uppercase font-bold tracking-wider text-sm border-l border-white/20 pl-6 h-10 items-justify-end">
+                <a href="index.html" class="hover:text-blue-300 px-2 border-r border-white/20 h-full flex items-center">Home</a>
+                <a href="FixturesAndResults.html" class="hover:text-blue-300 px-2 border-r border-white/20 h-full flex items-center">Fixtures and Results</a>
+                <a href="rankings.html" class="hover:text-blue-300 px-2 border-r border-white/20 h-full flex items-center">Rankings</a>
+                <a href="#" class="hover:text-blue-300 px-2 border-r border-white/20 h-full flex items-center">Venues</a>
+                <a href="#" class="hover:text-blue-300 px-2 border-r border-white/20 h-full flex items-center">Archive</a>
+                <a href="#" class="hover:text-blue-300 px-2 pl-4 h-full flex items-center">My Account</a>
+            </nav>
+
+    <!-- Mobile Hamburger Menu -->
+
+            <button id="mobileMenuButton" class="md:hidden text-white focus:outline-none hover:text-blue-300">
+                <img src="Icons-and-svgs/HamburgerMenu.svg" alt="Menu Icon" class="w-8 h-8">
+            </button>
+        </div>
+
+    <!-- Hidden Mobile Menu -->
+
+        <nav id="mobile-menu" class="hidden md:hidden absolute flex top-full w-full left-0 z-50 flex-col border-t border-white/20 uppercase font-bold tracking-wider text-sm bg-[#333333] text-white">
+            <a href="index.html" class="hover:text-blue-300 block py-2 px-5">Home</a>
+            <a href="FixturesAndResults.html" class="hover:text-blue-300 block py-2 px-5">Fixtures and Results</a>
+            <a href="rankings.html" class="hover:text-blue-300 block py-2 px-5">Rankings</a>
+            <a href="#" class="hover:text-blue-300 block py-2 px-5">Venues</a>
+            <a href="#" class="hover:text-blue-300 block py-2 px-5">Archive</a>
+            <a href="#" class="hover:text-blue-300 block py-2 px-5">My Account</a>
+        </nav>
+
+    </header>
+
+    <!-- Background Blur when drop menu is clicked-->
+
+    <div id="menu-overlay" class="fixed inset-0 bg-black/70 z-40 hidden md:hidden backdrop-blur-sm transition-opacity"></div>
+
+    <main class="max-w-[1800px] mx-auto px-6 py-8 flex flex-col lg:flex-row gap-6 items-start">
+
+
+
+    </main>
+</body>
