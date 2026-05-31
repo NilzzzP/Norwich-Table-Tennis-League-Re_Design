@@ -1780,28 +1780,6 @@ export async function loadMatchDetails(textFilePath){
         matchesContainer.append(matchdivDoubles);
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-
-    
-
-
-
-
-
-
     async function fetchMatchData(file){
         try{
             const response = await fetch(file)
