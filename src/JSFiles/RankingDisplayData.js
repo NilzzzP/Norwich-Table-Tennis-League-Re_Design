@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         tableBody.innerHTML='';
         players.forEach(player => {
             const tr = document.createElement('tr');
-            tr.className = 'border-b border-[#5b6a7a]/10 hover:bg-white/20 transition-colors'
+            tr.className = 'border-b border-[#5b6a7a]/10 hover:bg-white/20 transition-colors';
 
             let seasonColor = 'text-white';
             if (player.seasonPlusMinus.startsWith('+')) seasonColor = 'text-green-100';
@@ -71,5 +71,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         })
     }
 LoadData();
+
+    const rankingInformation = document.getElementById('ranking-information');
+    const rankingInformationBody = document.getElementById('ranking-information-body')
+    rankingInformation.addEventListener('click', (e) => {
+        rankingInformationBody.classList.remove('hidden');
+    });
+
+    const rankingInformationBodyCloseButton = document.getElementById('info-close')
+    rankingInformationBodyCloseButton.addEventListener('click', (e) => {
+        rankingInformationBody.classList.add('hidden');
+    });
     
 })
