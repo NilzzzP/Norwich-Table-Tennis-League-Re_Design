@@ -45,7 +45,7 @@ export async function DisplayPlayerHistory(JSONPath){
                 if (match.MatchPlusMinus.startsWith('-')) matchColor = 'text-red-100';
 
                 const tr = document.createElement('tr');
-                tr.className = 'border-b border-[#5b6a7a]/10 hover:bg-white/20 transition-colors';
+                tr.className = 'border-b border-white/50 hover:bg-white/20 transition-colors';
                 tr.innerHTML=`
                 
                 <td class="py-3 px-2 text-left">${match.Opponent}</td>
