@@ -138,6 +138,10 @@ This shows a new section **player rankings**. This section showed rankings of th
 
 These are screenshots of the site on a mobile device. A dropdown menu was implemented for the headers. The stack is also different, with news floating to the top of the page rather than on the side. 
 
+## Fixtures and Results
+
+On the Norwich Table Tennis League website, there is only a dropdown menu rather than a dedicated page for fixtures and results. Furthermore, the dropdown menu is messy and cluttered. 
+
 ## Backend Architecture
 
 Loading data dynamically was crucial for the development of this project; it was just as crucial as the front-end. For the researcher to host the site, they had to implement methods to dynamically load HTML elements as well as content on the pages. NodeJS played a huge roll in the back-end development. It was the main structure that allowed anything to be dynamically loaded, such as TailwindCSS or pulling content from Text, JavaScript Object Notation (JSON) and Comma Separated Value (CSV) files. It also allowed me to locally host the site during development which aided in their research for designing on multiple devices. I was able to view their site on several other devices which helped them test the sizes of elements.
