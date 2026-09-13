@@ -140,11 +140,23 @@ These are screenshots of the site on a mobile device. A dropdown menu was implem
 
 ## Fixtures and Results
 
-On the Norwich Table Tennis League website, there is only a dropdown menu rather than a dedicated page for fixtures and results. Furthermore, the dropdown menu is messy and cluttered. 
+On the Norwich Table Tennis League website, there is only a dropdown menu rather than a dedicated page for fixtures and results. Furthermore, the dropdown menu is messy and cluttered. You also had to do multiple clicks to arrive at the page and information you wanted, which was one of the complaints from participants. 
+
+### Low and Medium Fidelity Designs
+
+#### Low-Fidelity Design
+<img width="1012" height="931" alt="image" src="https://github.com/user-attachments/assets/9a63256f-9a42-4d38-a4c8-7e2d2e9c915c" />
+
+#### Mid-Fidelity Design
+<img width="714" height="862" alt="image" src="https://github.com/user-attachments/assets/5e99bc4b-7b2a-4451-adc3-6881b39803e5" />
+
+I opted for a different approach for design which intended to take away the complexity from the users. Rather than travelling through different links to reach a section of information, the design implements a form and response system. The lo-fi shows buttons for selecting which division the user may want to see; the same implementation used in the homepage designs. The mid-fi refined the lo-fi design. It included a section underneath where the data would be displayed, along with the implementation of a filtering and sorting system which would dynamically change depending on what content was displayed. Furthermore, colours and fonts increase readability of text and buttons without breaking the same design language as the homepage.
 
 ## Backend Architecture
 
 Loading data dynamically was crucial for the development of this project; it was just as crucial as the front-end. For the researcher to host the site, they had to implement methods to dynamically load HTML elements as well as content on the pages. NodeJS played a huge roll in the back-end development. It was the main structure that allowed anything to be dynamically loaded, such as TailwindCSS or pulling content from Text, JavaScript Object Notation (JSON) and Comma Separated Value (CSV) files. It also allowed me to locally host the site during development which aided in their research for designing on multiple devices. I was able to view their site on several other devices which helped them test the sizes of elements.
+
+
 
 
 
