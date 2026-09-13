@@ -109,4 +109,40 @@ I was able to synthesis the data from interviews. Strong positive and negative p
 
 # First Development Stage
 
-Initial low-fidelity designs were hand drawn on my tablet. They were then implemented in Figma with colour. High-fidelity designs were coded on VS code in HTML using CSS and JS files. Tailwind was used for CSS designs.  
+## Mock-ups
+
+Initial low-fidelity designs were hand drawn on my tablet. They were then implemented in Figma with colour. High-fidelity designs were coded on VS code in HTML using CSS and JS files. Tailwind was used for CSS designs. The designs were all based on synthesised user feedback from the interviews and questionnaires. I developed designs for all screen sizes. The first designs I made (which were the most important parts of the site) were the **homepage** and **Fixtures and Results** pages. 
+
+## Homepage Designs
+
+### Low-Fidelity Design
+<img width="1233" height="594" alt="image" src="https://github.com/user-attachments/assets/b2ee80e6-ae3c-4e7c-8989-e6cd2533970d" />
+
+This design was drawn up on my Samsung Tablet. It sets the shape and tone for the rest of the site, such as the content that is displayed, and how its displayed. Although the design wasn't complete, it was enough for me to start working on a medium-fidelity prototype through Figma. 
+
+### Mid-Fidelity Design
+<img width="1340" height="974" alt="image" src="https://github.com/user-attachments/assets/401385b3-cb68-4438-9a85-23aed9eb5358" />
+
+This design is an adaptation of the Low-Fidelity. It adds colour and dummy data filled into corresponding sections. It takes the blue that is used in the original site. I also made interactions clearer for users, such as adding arrows for users to flick through match cards. Furthermore, I intentionally made the winners clear on the score cards, so information can be seen clearly and quickly. Text font and colours were picked intentionally too. It uses the same font as the Norwich Table Tennis League website. The darker gradient along the right hand side headers are to make it more readable for users. 
+
+### High-Fidelity Design
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b2f1820f-da04-4cc6-a38c-b823df889ebc" />
+
+This is the High-Fidelity Desktop page. It is very similar to the Medium-Fidelity design. The season table now includes clearer, segmented rows for each team with nicely spaced columns. The news tab now features a "read more" button as well as previous and next buttons to show different news articles. There are also some interactions included on the page too where hovering over match cards would cause them to slightly enlarge, and swiping left and right to reveal match cards. 
+
+<img width="666" height="726" alt="image" src="https://github.com/user-attachments/assets/38f0501c-9a24-42b6-a5ae-6b1be80d216e" />
+
+This shows a new section **player rankings**. This section showed rankings of the top ten players in each division. This is another feature that I deemed as important content that the users may want to see.
+
+<img height="500" alt="image" src="https://github.com/user-attachments/assets/8c345779-5b6e-49e5-9394-bc409a4c21ac" /><img height="500" alt="image" src="https://github.com/user-attachments/assets/c3207321-cb6c-480f-bcf1-c67c93925b77" />
+
+These are screenshots of the site on a mobile device. A dropdown menu was implemented for the headers. The stack is also different, with news floating to the top of the page rather than on the side. 
+
+## Backend Architecture
+
+Loading data dynamically was crucial for the development of this project; it was just as crucial as the front-end. For the researcher to host the site, they had to implement methods to dynamically load HTML elements as well as content on the pages. NodeJS played a huge roll in the back-end development. It was the main structure that allowed anything to be dynamically loaded, such as TailwindCSS or pulling content from Text, JavaScript Object Notation (JSON) and Comma Separated Value (CSV) files. It also allowed me to locally host the site during development which aided in their research for designing on multiple devices. I was able to view their site on several other devices which helped them test the sizes of elements.
+
+
+
+
+
