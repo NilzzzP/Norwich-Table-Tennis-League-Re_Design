@@ -152,10 +152,73 @@ On the Norwich Table Tennis League website, there is only a dropdown menu rather
 
 I opted for a different approach for design which intended to take away the complexity from the users. Rather than travelling through different links to reach a section of information, the design implements a form and response system. The lo-fi shows buttons for selecting which division the user may want to see; the same implementation used in the homepage designs. The mid-fi refined the lo-fi design. It included a section underneath where the data would be displayed, along with the implementation of a filtering and sorting system which would dynamically change depending on what content was displayed. Furthermore, colours and fonts increase readability of text and buttons without breaking the same design language as the homepage.
 
+### High-Fidelity Design
+
+The design was slightly different, where the desktop design was set in columns rather than rows. However, the mobile design displayed as a column as I considered this as a better implementation. The colour scheme kept the same design as the homepage. Some differences in the hi-fi were the inclusion of images for the buttons. This would help the user identify categories easier. Furthermore, categories that were selected were highlighted in blue with a black outline. This was due to one of the overall feedback concluding that adding interactive elements and clear contrasts were must-haves.
+
+During development, loaded data was taken from the same CSV files as homepage data was pulled from. This was decided for consistency reasons, and that I was able to re-use code from the homepage to display the same information on the fixtures and results page.
+
+
+#### Desktop View
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2623b705-cc3e-4ef9-8594-00ea73a6a4ef" />
+
+#### Mobile View
+<img height="500" alt="image" src="https://github.com/user-attachments/assets/2f0cca82-3980-4e43-af66-0f37b47b2993" />
+
 ## Backend Architecture
 
 Loading data dynamically was crucial for the development of this project; it was just as crucial as the front-end. For the researcher to host the site, they had to implement methods to dynamically load HTML elements as well as content on the pages. NodeJS played a huge roll in the back-end development. It was the main structure that allowed anything to be dynamically loaded, such as TailwindCSS or pulling content from Text, JavaScript Object Notation (JSON) and Comma Separated Value (CSV) files. It also allowed me to locally host the site during development which aided in their research for designing on multiple devices. I was able to view their site on several other devices which helped them test the sizes of elements.
 
+# Second Data Collection Stage
+
+At this stage, I was ready to go back to participants and interview based on the developed parts of the site. Although not all the pages were complete, it was enough to allow an insight into what participants thought of the site. 
+
+## Positives
+
+All participants had positive reactions to initial viewing of the page. They thought that everything was easy to understand, and that interactions throughout the page were nice. Participants also praised the segmented design and elements used throughout the pages. I also asked about whether content on the page was overwhelming; participants did not think the content was overwhelming. Participants also praised the fixtures and results layout for it’s simpler nature and its ability to find information faster. Furthermore, some participants also mentioned that having the news tab on the side on the homepage was a nice implementation.
+
+## Negatives
+
+Although participant largely liked the design, there were some negative points brought up in interviews. Generally, participants disliked side-scrolling elements, especially on mobile. Furthermore, there were some places on the site where interactions were expected, but weren’t implemented. This was largely due to the fact that I hadn’t finished developing all the parts of the site yet. Another participant also mentioned that on mobile, some tables are often quite wide, where some columns could be omitted to save space. A specific point that participants had were that the fixtures and results tab were slow to load, including images and interactions with categories.
+
+# Second Development Stage
+
+At this stage, I decided to implement two more pages. Routes for when the **recent matches** cards are clicked from the homepage, as well as content for player rankings. 
+
+## Match Details Design and Development
+
+### Low-Fidelity 
+
+<img height="500" alt="image" src="https://github.com/user-attachments/assets/733230f9-f4b6-46fc-8950-df83b6bf9501" />
+
+### High-Fidelity 
+
+<img width="1918" height="934" alt="image" src="https://github.com/user-attachments/assets/d2013019-bfdf-46f0-88ca-f4172b47b666" />
+
+### High-Fidelity Extended
+<img width="1160" height="937" alt="image" src="https://github.com/user-attachments/assets/0b8f4f6a-3dd6-4582-9641-79cc35aa909b" />
+
+There were some extra features that don’t appear on the regular NTTL site, such as the ability to see the scoresheet, and profile photos for players. The lo-fi design pictured a single column of data, so users can visualise data as they scroll down. The hi-fi takes this same design and implements colours and high contrast sections, which is what participants gave feedback on in the first data collection stage.
+
+## Rankings Designs and Development
+
+Here show the lo-fi and hi-fi designs of the rankings page. This page holds all the players and their ranking between all other players throughout the league. The lo-fi features a search bar and two buttons; a button that links to TTE’s National Rankings page, and a pop-up button that displays information about how points are scored for players. The pop-up button was considered from the questionnaire results where responses indicated that players did not know how the points system worked. Along with two buttons is a search bar. When a name was pressed, it took the user to a player statistics page.
+
+### Low-Fidelity Design
+
+<img width="1363" height="949" alt="image" src="https://github.com/user-attachments/assets/adf2333d-5b5f-4242-9092-7904fba4d8b5" />
+
+### Rankings High-Fidelity Design
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/83ff5c5e-480d-428f-a6cf-cd46c7a9e3e1" />
+
+### Individual Rankings High-Fidelity Design 
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ff89a87f-8888-41ee-8257-90fb0a43eeb1" />
+
+### Individual Rankings High-Fidelity Design Extended
+
+<img width="1902" height="937" alt="image" src="https://github.com/user-attachments/assets/14e19bf3-d2d1-4b61-9965-745fe7324e62" />
 
 
 
